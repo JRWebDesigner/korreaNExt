@@ -8,11 +8,11 @@ export default function Home() {
 	      </video>
       </section>
       <section className="bg-[url(/svg.svg)] bg-cover h-[90dvh] w-full flex justify-center items-center flex-col gap-10 p-6">
-          <h2 className="mx-22 font-bold text-xl md:text-6xl text-center text-green-400">
+          <h2 className="md:mx-22 font-bold text-xl md:text-6xl text-center text-green-400">
             Creative Event Agency &
 Event Production Company
           </h2>
-          <p className="mx-22 text-center font-medium text-2xl text-blue-300">
+          <p className="md:mx-22 text-center font-medium text-2xl text-blue-300">
           We blend creative agency thinking with production company doing to deliver extraordinary events and everlasting experiences
 <br />
 Enabling you to create an experience that matters for the people that matter to you
