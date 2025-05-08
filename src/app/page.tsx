@@ -22,10 +22,10 @@ Enabling you to create an experience that matters for the people that matter to 
 	    <section className="bg-black text-white py-16 px-4 md:px-20">
       <div className="text-center max-w-3xl mx-auto mb-12">
         <h2 className="text-3xl md:text-4xl font-semibold text-green-400">
-          Una escala que se adapta a tu ambición
+          A scale that adapts to your ambition
         </h2>
         <p className="text-base md:text-lg mt-4 text-gray-300">
-          Nuestra oferta ha crecido orgánicamente a lo largo de tres décadas en respuesta a las necesidades de nuestros clientes y a nuestro propio compromiso con la excelencia. El resultado es un conjunto único e integral de capacidades y servicios, todo bajo un mismo techo, literalmente. Esto significa que podemos pasar de la estrategia y la creatividad a la producción y la entrega en un proceso integrado.
+          Our offering has grown organically over three decades in response to our clients' needs and our own commitment to excellence. The result is a unique and comprehensive set of capabilities and services, literally all under one roof. This means we can move from strategy and creativity to production and delivery in an integrated process.
         </p>
       </div>
 
