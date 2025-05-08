@@ -3,7 +3,7 @@ export default function Home() {
   return (
     <>
       <section className="relative h-[130dvh] bg-black">
-	      <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoplay muted>
+	      <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoPlay loop playsInline muted>
 	      </video>
       </section>
       <section className="bg-[url(/svg.svg)] bg-cover h-[90dvh] w-full flex justify-center items-center flex-col gap-10 p-6">
