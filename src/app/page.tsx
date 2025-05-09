@@ -1,7 +1,25 @@
+"use client"
 import Image from "next/image";
-    
+import { useEffect, useState } from "react";
+
+const testimonios = [
+  {
+    texto:
+      "I wanted to send my gratitude to you and the team for helping us deliver this event and for working with us with the many requests and changes we threw your way. The long hours that your team worked through is not unnoticed. Everyone remarked on how brilliantly professional and polished the event looked, which is entirely down to your team.",
+    autor: "Foreign, Commonwealth & Development Office",
+  },
+  // Puedes agregar más testimonios aquí si lo deseas
+];
 //Rossy te amo y extraño
 export default function Home() {
+const [indice, setIndice] = useState(0);
+
+  useEffect(() => {
+    const intervalo = setInterval(() => {
+      setIndice((prev) => (prev + 1) % testimonios.length);
+    }, 7000); // Cambia cada 7 segundos
+    return () => clearInterval(intervalo);
+  }, []);
   return (
     <>
       <section className="relative h-[130dvh] bg-black">
@@ -89,6 +107,36 @@ Enabling you to create an experience that matters for the people that matter to 
           <button className="bg-green-300 text-black font-medium px-6 py-2 rounded text-sm sm:text-base">
             VIEW OUR WORK
           </button>
+        </div>
+      </div>
+    </section>
+	    <section className="bg-black text-white py-16 px-4 md:px-20 text-center transition-all duration-1000">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold text-green-400 mb-6">
+          The once-in-a-lifetime, on a daily basis.
+        </h2>
+
+        <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-10">
+          We're trusted by some of the world’s most high-profile brands and venues to design and deliver without fail – because failure isn’t an option. We partner closely with our clients to truly understand their needs and create the perfect event based on a deep knowledge of what we know will work. Creating a shared success that lives long in the memory.
+        </p>
+
+        <blockquote className="text-green-300 italic text-base md:text-lg leading-relaxed mb-6">
+          “{testimonios[indice].texto}”
+        </blockquote>
+
+        <p className="text-sm md:text-base font-semibold text-white">
+          {testimonios[indice].autor}
+        </p>
+
+        <div className="flex justify-center mt-8 gap-2">
+          {testimonios.map((_, i) => (
+            <span
+              key={i}
+              className={`h-3 w-3 rounded-full transition-colors duration-500 ${
+                i === indice ? "bg-green-400" : "bg-gray-600"
+              }`}
+            />
+          ))}
         </div>
       </div>
     </section>
