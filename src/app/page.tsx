@@ -65,6 +65,33 @@ Enabling you to create an experience that matters for the people that matter to 
         </div>
       </div>
     </section>
+	    <section className="relative w-full h-[90vh] md:h-screen">
+      <Image
+        src="/img/guap-gala.jpg" // Asegúrate de que esta imagen esté en public/img/
+        alt="Evento G"
+        fill
+        className="object-cover"
+        priority
+      />
+
+      <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-start p-6 md:p-16">
+        <div className="max-w-2xl text-left text-white">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-300 leading-tight mb-4">
+            Celebrate,<br />
+            communicate,<br />
+            inspire, educate.
+          </h2>
+
+          <p className="text-sm sm:text-base text-gray-200 mb-6">
+            From the strictly professional to the deeply personal, our work encompasses everything from exhibitions and brand experiences, to conferences and launches, to awards, receptions, dinners and more. Whether live, virtual or hybrid, they all share the power to bring people together and deliver an experience that lasts.
+          </p>
+
+          <button className="bg-green-300 text-black font-medium px-6 py-2 rounded text-sm sm:text-base">
+            VIEW OUR WORK
+          </button>
+        </div>
+      </div>
+    </section>
     </>
   );
 }
