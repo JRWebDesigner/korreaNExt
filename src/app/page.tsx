@@ -25,7 +25,7 @@ Enabling you to create an experience that matters for the people that matter to 
           A scale that adapts to your ambition
         </h2>
         <p className="text-base md:text-lg mt-4 text-gray-300">
-          Our offering has grown organically over three decades in response to our clients' needs and our own commitment to excellence. The result is a unique and comprehensive set of capabilities and services, literally all under one roof. This means we can move from strategy and creativity to production and delivery in an integrated process.
+          Our offering has grown organically over three decades in response to our clients needs and our own commitment to excellence. The result is a unique and comprehensive set of capabilities and services, literally all under one roof. This means we can move from strategy and creativity to production and delivery in an integrated process.
         </p>
       </div>
 
