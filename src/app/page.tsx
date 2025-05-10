@@ -140,6 +140,25 @@ Enabling you to create an experience that matters for the people that matter to 
         </div>
       </div>
     </section>
+	    <section className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh] flex items-center justify-center text-center">
+      <Image
+        src="/img/fondo-agencia.jpg" // Asegúrate de que esta imagen esté en public/img/
+        alt="Fondo Agencia Londres"
+        fill
+        className="object-cover"
+        priority
+      />
+
+      <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center px-4">
+        <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-semibold max-w-3xl leading-snug mb-6">
+          Born in London our creative event agency and production company delivers extraordinary events and experiences on a global scale
+        </h2>
+
+        <button className="border border-green-400 text-green-400 px-6 py-2 text-sm sm:text-base font-medium rounded hover:bg-green-400 hover:text-black transition">
+          EVENT AGENCY LONDON
+        </button>
+      </div>
+    </section>
     </>
   );
 }
