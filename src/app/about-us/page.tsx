@@ -1,6 +1,7 @@
 import Image from "next/image";
 export default function Aboutus(){
   return(
+    <>
     <section className="relative w-full h-[60vh] md:h-[80vh] flex items-center">
       <Image
         src="/img/experiencias.jpg" // Guarda la imagen como experiencias.jpg en public/img
@@ -60,6 +61,6 @@ export default function Aboutus(){
         </div>
       </div>
     </section>
-
+    </>
   )
 }
