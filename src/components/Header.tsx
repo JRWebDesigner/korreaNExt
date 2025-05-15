@@ -42,13 +42,13 @@ export default function Header() {
               <Link href="/">Home</Link>
             </li>
             <li className="transition-colors duration-100 hover:text-green-400">
-              <Link href="/about">About us</Link>
+              <Link href="/about-us">About us</Link>
             </li>
             <li className="transition-colors duration-100 hover:text-green-400">
-              <Link href="/contact">What we do</Link>
+              <Link href="/what-we">What we do</Link>
             </li>
             <li className="transition-colors duration-100 hover:text-green-400">
-              <Link href="/about">Our work</Link>
+              <Link href="/oue-work">Our work</Link>
             </li>
             <li className="transition-colors duration-100 hover:text-green-400">
               <Link href="/contact">Contact</Link>
