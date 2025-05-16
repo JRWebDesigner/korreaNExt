@@ -8,6 +8,11 @@ const testimonios = [
       "I wanted to send my gratitude to you and the team for helping us deliver this event and for working with us with the many requests and changes we threw your way. The long hours that your team worked through is not unnoticed. Everyone remarked on how brilliantly professional and polished the event looked, which is entirely down to your team.",
     autor: "Foreign, Commonwealth & Development Office",
   },
+	{
+    texto:
+      "2.- I wanted to send my gratitude to you and the team for helping us deliver this event and for working with us with the many requests and changes we threw your way. The long hours that your team worked through is not unnoticed. Everyone remarked on how brilliantly professional and polished the event looked, which is entirely down to your team.",
+    autor: "Foreign, Commonwealth & Development Office",
+  },
   // Puedes agregar más testimonios aquí si lo deseas
 ];
 //Rossy te amo y extraño
