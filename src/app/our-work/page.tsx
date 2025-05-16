@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 export default function Ourwork(){
   return(
     <>
@@ -7,51 +8,45 @@ export default function Ourwork(){
 	      </video>
       </section>
       <section className="bg-black text-white py-16 px-4 md:px-20">
-      <div className="text-center max-w-3xl mx-auto mb-12">
-        <h2 className="text-3xl md:text-4xl font-semibold text-green-400">
-          Una escala que se adapta a tu ambición
-        </h2>
-        <p className="text-base md:text-lg mt-4 text-gray-300">
-          Nuestrahaferta ha crecido orgánicamente a lo largo de tres décadas en respuesta a las necesidades de nuestros clientes y a nuestro propio compromiso con la excelencia. El resultado es un conjunto único e integral de capacidades y servicios, todo bajo un mismo techo, literalmente. Esto significa que podemos pasar de la estrategia y la creatividad a la producción y la entrega en un proceso integrado.
-        </p>
-      </div>
+       <div className="max-w-4xl mx-auto">
+        {/* Main heading section */}
+        <section className="mb-12">
+          <h1 className="text-4xl font-bold text-gray-800 mb-6">
+            Events may come and go, experiences stay
+          </h1>
+          <p className="text-lg text-gray-600 mb-8">
+            We work across the full spectrum of business events, brand experiences and personal occasions.<br />
+            Whether your guest list includes the great and the good, or your nearest and dearest, you can relax knowing each event is meticulously planned and flawlessly delivered. Live, virtual or hybrid, they all share the power to create a lasting impression that lives long in the memory.
+          </p>
+          <div className="h-px bg-gray-200 w-full"></div>
+        </section>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="relative h-80 md:h-[500px]">
-          <Image
-            src="/img/soluciones-mundial.jpg"
-            alt="Soluciones integrales"
-            fill
-            className="object-cover rounded"
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-4">
-            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4">
-              Soluciones integrales a nivel mundial
-            </h3>
-            <button className="bg-green-400 text-black px-4 sm:px-6 py-2 font-medium rounded text-sm sm:text-base">
-              DESCUBRA NUESTRA EXPERIENCIA
-            </button>
-          </div>
-        </div>
-
-        <div className="relative h-80 md:h-[500px]">
-          <Image
-            src="/img/eventos-londres.jpg"
-            alt="Eventos en Londres"
-            fill
-            className="object-cover rounded"
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-4">
-            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4">
-              Especialistas en producción de eventos en Londres
-            </h3>
-            <button className="bg-green-400 text-black px-4 sm:px-6 py-2 font-medium rounded text-sm sm:text-base">
-              DESCUBRE MÁS
-            </button>
-          </div>
+        {/* Event categories */}
+        <div className="space-y-8">
+          <EventCategory title="Brand Experiences" />
+          <EventCategory title="Dimers & Receptions" />
+          <EventCategory title="Drivers & Receptions" />
+          <EventCategory title="Driver & Receptions" />
+          <EventCategory title="Dishonest & Receptions" />
+          <EventCategory title="Living & Receptions" />
         </div>
       </div>
+      
     </section>
     </>
   )
+}
+function EventCategory({ title }) {
+  return (
+    <section className="group">
+      <h2 className="text-2xl font-semibold text-gray-800 mb-4">{title}</h2>
+      <div className="h-px bg-gray-200 w-full group-last:hidden"></div>
+      <Link 
+        href="#" 
+        className="inline-block mt-4 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+      >
+        DISCOVER MORE
+      </Link>
+    </section>
+  );
 }
