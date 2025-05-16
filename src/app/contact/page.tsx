@@ -48,7 +48,7 @@ export default function Contact(){
             <option>Social Media</option>
             <option>Friend or Colleague</option>
           </select>
-          <textarea placeholder="How can we help?" rows="4" className="w-full bg-gray-800 p-3 rounded text-white"></textarea>
+          <textarea placeholder="How can we help?" rows={4} className="w-full bg-gray-800 p-3 rounded text-white"></textarea>
 
           <div className="flex items-center gap-2">
             <input type="checkbox" id="newsletter" className="accent-green-500" />
