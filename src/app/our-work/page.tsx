@@ -1,5 +1,6 @@
-
+"use client"
 import Image from "next/image";
+import { useState } from "react";
 
 const eventData = [
   { title: "Brand Experiences", image: "/brand.jpg" },
@@ -10,7 +11,24 @@ const eventData = [
   { title: "Live Shows", image: "/live.jpg" },
 ];
 
+const caseStudies = [
+  {
+    title: "GUAP Gala",
+    subtitle: "Guap Gala Dinner",
+    image: "/guap-gala.jpg",
+  },
+{
+    title: "GUAP Gala",
+    subtitle: "Guap Gala Dinner",
+    image: "/guap-gala.jpg",
+  },
+  // Puedes agregar más elementos aquí si quieres un slider funcional
+];
+
 export default function Ourwork(){
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const current = caseStudies[currentIndex];
+
   return(
     <>
       <section className="relative h-[130dvh] bg-black">
@@ -49,6 +67,40 @@ export default function Ourwork(){
               </div>
             </div>
           ))}
+        </div>
+      </div>
+    </div>
+     <div className="relative min-h-screen text-white">
+      <Image
+        src={current.image}
+        alt={current.title}
+        fill
+        className="object-cover z-0"
+      />
+      <div className="absolute inset-0 bg-black bg-opacity-60 z-10 flex flex-col justify-end p-6 md:p-12">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-4">Case Studies</h2>
+
+        <div className="max-w-xl">
+          <h3 className="text-2xl text-green-400 font-semibold">{current.title}</h3>
+          <p className="text-sm mb-6">{current.subtitle}</p>
+
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <button className="text-green-400 text-2xl" onClick={() => setCurrentIndex((prev) => (prev === 0 ? caseStudies.length - 1 : prev - 1))}>
+                &#x276E;
+              </button>
+              <button className="bg-green-400 text-black font-semibold px-4 py-2 text-sm rounded hover:bg-green-500">
+                VIEW CASE STUDY
+              </button>
+              <button className="text-green-400 text-2xl" onClick={() => setCurrentIndex((prev) => (prev === caseStudies.length - 1 ? 0 : prev + 1))}>
+                &#x276F;
+              </button>
+            </div>
+            <div className="text-sm text-green-400">{`${currentIndex + 1} / ${caseStudies.length}`}</div>
+            <button className="border border-green-400 text-green-400 px-4 py-2 text-sm rounded hover:bg-green-400 hover:text-black">
+              VIEW ALL
+            </button>
+          </div>
         </div>
       </div>
     </div>
