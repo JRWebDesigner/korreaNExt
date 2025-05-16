@@ -1,5 +1,8 @@
 
 import Link from "next/link"
+interface EventCategoryProps {
+  title: string;
+}
 export default function Ourwork(){
   return(
     <>
@@ -36,7 +39,7 @@ export default function Ourwork(){
     </>
   )
 }
-function EventCategory({ title }) {
+function EventCategory({ title }: EventCategoryProps) {
   return (
     <section className="group">
       <h2 className="text-2xl font-semibold text-gray-800 mb-4">{title}</h2>
