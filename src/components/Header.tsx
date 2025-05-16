@@ -48,7 +48,7 @@ export default function Header() {
               <Link href="/what-we">What we do</Link>
             </li>
             <li className="transition-colors duration-100 hover:text-green-400">
-              <Link href="/oue-work">Our work</Link>
+              <Link href="/our-work">Our work</Link>
             </li>
             <li className="transition-colors duration-100 hover:text-green-400">
               <Link href="/contact">Contact</Link>
