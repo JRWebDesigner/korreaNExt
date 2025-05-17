@@ -19,12 +19,12 @@ export default function Footer(){
       </div>
 
       <div className="flex flex-wrap justify-center gap-6 border-t border-gray-700 pt-6">
-        <Link href="/" className="text-white font-semibold text-sm hover:text-green-400">>Home</Link>
-              <Link href="/about-us" className="text-white font-semibold text-sm hover:text-green-400">>About us</Link>
+        <Link href="/" className="text-white font-semibold text-sm hover:text-green-400">Home</Link>
+              <Link href="/about-us" className="text-white font-semibold text-sm hover:text-green-400">About us</Link>
      
-              <Link href="/what-we" className="text-white font-semibold text-sm hover:text-green-400">>What we do</Link>
-              <Link href="/our-work" className="text-white font-semibold text-sm hover:text-green-400">>Our work</Link>
-              <Link href="/contact" className="text-white font-semibold text-sm hover:text-green-400">>Contact</Link>
+              <Link href="/what-we" className="text-white font-semibold text-sm hover:text-green-400">What we do</Link>
+              <Link href="/our-work" className="text-white font-semibold text-sm hover:text-green-400">Our work</Link>
+              <Link href="/contact" className="text-white font-semibold text-sm hover:text-green-400">Contact</Link>
         <div className="flex items-center gap-4 ml-4 text-green-400">
           <Link href="https://www.instagram.com/korreastudio?igsh=MW1kOTQza25vMW9ocw=="><FaInstagram size={20} /></Link>
         </div>
