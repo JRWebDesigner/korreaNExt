@@ -7,7 +7,7 @@ export default function Footer(){
         <footer className="bg-black text-white py-10 px-6 md:px-20">
       <div className="flex flex-col md:flex-row justify-between items-center mb-10">
         <div className="flex items-center gap-4 mb-6 md:mb-0">
-          <Image src="/logo.png" alt=" logo" width={60} height={60} />
+          <Image src="/logo.png" alt=" logo" width={140} height={140} />
           <div className="text-sm">
             <p className="text-green-400 font-medium">+44 7939 697888</p>
             <p className="text-green-400 font-medium">info@korreastudio.com</p>
