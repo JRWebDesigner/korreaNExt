@@ -10,7 +10,7 @@ export default function Footer(){
           <Image src="/logo.png" alt=" logo" width={140} height={140} />
           <div className="text-sm">
             <p className="text-green-400 font-medium">+44 7939 697888</p>
-            <p className="text-green-400 font-medium">info@korreastudio.com</p>
+            <p className="text-green-400 font-medium">info@korreastudio.co.uk</p>
           </div>
         </div>
         <div className="text-sm text-right">
