@@ -33,7 +33,7 @@ export default function Header() {
         <Link href="/">
           <img src="/logo.png" alt="Logo" className="h-12" />
         </Link>
-        <div className="relative z-50 md:hidden">
+        <div className="md:hidden">
           <button onClick={() => setMenuOpen(!menuOpen)} className="text-3xl">
             {menuOpen ? <FiX /> : <FiMenu />}
           </button>
@@ -46,28 +46,33 @@ export default function Header() {
           ))}
         </ul>
       </header>
-
       <AnimatePresence>
-        {menuOpen && (
-          <motion.nav
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black flex flex-col items-center justify-center space-y-10 text-3xl text-white z-40"
-          >
-            {navLinks.map(({ href, label }) => (
-              <Link
-                key={href}
-                href={href}
-                onClick={() => setMenuOpen(false)}
-                className="hover:text-green-400 transition-colors"
-              >
-                {label}
-              </Link>
-            ))}
-          </motion.nav>
-        )}
-      </AnimatePresence>
+  {menuOpen && (
+    <motion.nav
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 bg-black flex flex-col items-center justify-center space-y-10 text-3xl text-white z-50"
+    >
+      <button
+        onClick={() => setMenuOpen(false)}
+        className="absolute top-6 right-6 text-4xl text-white"
+      >
+        <FiX />
+      </button>
+      {navLinks.map(({ href, label }) => (
+        <Link
+          key={href}
+          href={href}
+          onClick={() => setMenuOpen(false)}
+          className="hover:text-green-400 transition-colors"
+        >
+          {label}
+        </Link>
+      ))}
+    </motion.nav>
+  )}
+</AnimatePresence>
     </div>
   );
 }
