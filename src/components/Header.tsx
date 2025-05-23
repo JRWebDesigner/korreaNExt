@@ -1,62 +1,73 @@
-// components/Header.js
 'use client';
 
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { FiMenu, FiX } from 'react-icons/fi';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 0);
-    };
-
+    const handleScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const navLinks = [
+    { href: '/', label: 'Home' },
+    { href: '/about-us', label: 'About us' },
+    { href: '/what-we', label: 'What we do' },
+    { href: '/our-work', label: 'Our work' },
+    { href: '/contact', label: 'Contact' },
+  ];
 
   return (
     <div className="fixed w-full z-50">
       <header
         className={`${
-          scrolled ? 'bg-black/70 backdrop-blur-sm shadow-lg border-b-2 border-white' : 'bg-transparent'
-        } text-white px-4 md:px-10 py-4 w-full flex flex-col md:flex-row justify-between items-center m-auto rounded-none duration-500 transition-all ease-in-out`}
+          scrolled ? 'bg-black/70 backdrop-blur-sm shadow-md border-b border-white' : 'bg-transparent'
+        } text-white px-6 md:px-10 py-4 w-full flex justify-between items-center transition-all duration-500 ease-in-out`}
       >
-        <div className="flex justify-between items-center w-full md:w-auto">
-          <Link href="/">
-            <img src="/logo.png" alt="Logo" className='h-14'/>
-          </Link>
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden text-white text-3xl focus:outline-none"
-          >
-            &#9776;
+        <Link href="/">
+          <img src="/logo.png" alt="Logo" className="h-12" />
+        </Link>
+        <div className="md:hidden">
+          <button onClick={() => setMenuOpen(!menuOpen)} className="text-3xl">
+            {menuOpen ? <FiX /> : <FiMenu />}
           </button>
         </div>
-        <nav className={`${menuOpen ? 'flex' : 'hidden'} md:flex md:w-1/2 w-full mt-4 md:mt-0`}>
-          <ul className="flex flex-col md:flex-row justify-around items-center text-3xl md:text-xl font-semibold w-full">
-            <li className="transition-colors duration-100 hover:text-green-400">
-              <Link href="/">Home</Link>
+        <ul className="hidden md:flex gap-8 text-lg font-medium tracking-wide">
+          {navLinks.map(({ href, label }) => (
+            <li key={href} className="hover:text-green-400 transition-colors">
+              <Link href={href}>{label}</Link>
             </li>
-            <li className="transition-colors duration-100 hover:text-green-400">
-              <Link href="/about-us">About us</Link>
-            </li>
-            <li className="transition-colors duration-100 hover:text-green-400">
-              <Link href="/what-we">What we do</Link>
-            </li>
-            <li className="transition-colors duration-100 hover:text-green-400">
-              <Link href="/our-work">Our work</Link>
-            </li>
-            <li className="transition-colors duration-100 hover:text-green-400">
-              <Link href="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
+          ))}
+        </ul>
       </header>
+
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.nav
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black flex flex-col items-center justify-center space-y-10 text-3xl text-white z-40"
+          >
+            {navLinks.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-green-400 transition-colors"
+              >
+                {label}
+              </Link>
+            ))}
+          </motion.nav>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
-
