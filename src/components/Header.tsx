@@ -33,7 +33,7 @@ export default function Header() {
         <Link href="/">
           <img src="/logo.png" alt="Logo" className="h-12" />
         </Link>
-        <div className="md:hidden">
+        <div className="relative z-50 md:hidden">
           <button onClick={() => setMenuOpen(!menuOpen)} className="text-3xl">
             {menuOpen ? <FiX /> : <FiMenu />}
           </button>
