@@ -27,7 +27,7 @@ export default function Header() {
     <div className="fixed w-full z-50">
       <header
         className={`${
-          scrolled ? 'bg-gray-900 backdrop-blur-sm shadow-md border-b border-white' : 'bg-transparent'
+          scrolled ? 'bg-gray-800 backdrop-blur-sm shadow-md border-b border-white' : 'bg-transparent'
         } text-white px-6 md:px-10 py-4 w-full flex justify-between items-center transition-all duration-500 ease-in-out`}
       >
         <Link href="/">
