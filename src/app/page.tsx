@@ -177,7 +177,7 @@ export default function Home() {
           </h2>
 
           <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-10">
-            We re trusted by some of the world's most high-profile brands and venues to design and deliver without fail – because failure isn't an option. We partner closely with our clients to truly understand their needs and create the perfect event based on a deep knowledge of what we know will work. Creating a shared success that lives long in the memory.
+            We re trusted by some of the world&apos;s most high-profile brands and venues to design and deliver without fail – because failure isn&apos;t an option. We partner closely with our clients to truly understand their needs and create the perfect event based on a deep knowledge of what we know will work. Creating a shared success that lives long in the memory.
           </p>
 
           <motion.div 
@@ -188,7 +188,7 @@ export default function Home() {
             transition={{ duration: 0.5 }}
           >
             <blockquote className="text-green-300 italic text-base md:text-lg leading-relaxed mb-6">
-              "{testimonios[indice].texto}"
+              &quot;{testimonios[indice].texto}&quot;
             </blockquote>
 
             <p className="text-sm md:text-base font-semibold text-white">
