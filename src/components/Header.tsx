@@ -22,12 +22,12 @@ export default function Header() {
     <div className="fixed w-full z-50">
       <header
         className={`${
-          scrolled ? 'bg-gray-900/30 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+          scrolled ? 'bg-black/70 backdrop-blur-sm shadow-lg border-b-2 border-white' : 'bg-transparent'
         } text-white px-4 md:px-10 py-4 w-full flex flex-col md:flex-row justify-between items-center m-auto rounded-none duration-500 transition-all ease-in-out`}
       >
         <div className="flex justify-between items-center w-full md:w-auto">
           <Link href="/">
-            <img src="/logo.png" alt="Logo" className='h-16'/>
+            <img src="/logo.png" alt="Logo" className='h-14'/>
           </Link>
           <button
             onClick={() => setMenuOpen(!menuOpen)}

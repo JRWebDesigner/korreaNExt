@@ -27,16 +27,16 @@ const [indice, setIndice] = useState(0);
   }, []);
   return (
     <>
-      <section className="relative h-[130dvh] bg-black">
+      <section className="relative h-[70dvh] md:h-[100dvh] bg-black">
 	      <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoPlay loop playsInline muted>
 	      </video>
       </section>
-      <section className="bg-[url(/svg.svg)] bg-cover h-[90dvh] w-full flex justify-center items-center flex-col gap-10 p-6">
-          <h2 className="md:mx-22 font-bold text-xl md:text-6xl text-center text-green-400">
+      <section className="bg-[url(/svg.svg)] bg-cover bg-center h-[90dvh] w-full flex justify-center items-center flex-col gap-10 p-6">
+          <h1 className="md:mx-22 font-bold text-center text-green-400">
             Creative Event Agency &
 Event Production Company
-          </h2>
-          <p className="md:mx-22 text-center font-medium text-2xl text-blue-300">
+          </h1>
+          <p className="md:mx-22 text-center font-medium text-blue-300">
           We blend creative agency thinking with production company doing to deliver extraordinary events and everlasting experiences
 <br />
 Enabling you to create an experience that matters for the people that matter to you
