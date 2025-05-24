@@ -96,7 +96,7 @@ export default function Aboutus() {
             variants={fadeInUp}
             className="text-gray-300 text-lg md:text-xl mb-8"
           >
-            Whether it's a set, a prop, a painted backdrop, or a one-off installation — we handle it all, start to finish.
+            Whether it&apos;s a set, a prop, a painted backdrop, or a one-off installation — we handle it all, start to finish.
           </motion.p>
           <motion.p 
             variants={fadeInUp}
