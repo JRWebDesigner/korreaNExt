@@ -88,8 +88,6 @@ export default function WhatWe() {
           playsInline 
           muted 
         ></video>
-        {/* Overlay para mejor contraste */}
-        <div className="absolute inset-0 bg-black/30 z-1"></div>
       </motion.section>
 
       {/* Main Content Section - Texto más legible */}
