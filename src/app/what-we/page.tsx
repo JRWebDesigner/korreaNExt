@@ -87,7 +87,7 @@ export default function WhatWe() {
           loop 
           playsInline 
           muted 
-        />
+        ></video>
         {/* Overlay para mejor contraste */}
         <div className="absolute inset-0 bg-black/30 z-1"></div>
       </motion.section>
