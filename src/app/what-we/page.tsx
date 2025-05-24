@@ -53,10 +53,19 @@ const item = {
 };
 
 const fadeIn = {
-  hidden: { opacity: 0 },
+  hidden: {
+    opacity: 0,
+    scale: 0.95                 // Ligero escalado inicial
+  },
   visible: {
     opacity: 1,
-
+    scale: 1,
+    transition: {
+      duration: 0.7,
+      ease: "backOut"           // Easing con pequeño rebote
+    }
+  }
+};
 export default function WhatWe() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const current = caseStudies[currentIndex];
