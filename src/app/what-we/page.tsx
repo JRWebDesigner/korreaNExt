@@ -56,27 +56,6 @@ const fadeIn = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      duration: 1.2,
-      ease: "easeOut"
-    }
-  }
-};
-
-const slideUp = {
-  hidden: { 
-    opacity: 0,
-    y: 50
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.8,
-      ease: [0.16, 0.77, 0.47, 0.97]
-    }
-  }
-};
 
 export default function WhatWe() {
   const [currentIndex, setCurrentIndex] = useState(0);
