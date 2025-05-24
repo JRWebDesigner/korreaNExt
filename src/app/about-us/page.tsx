@@ -26,26 +26,8 @@ const staggerContainer = {
   }
 };
 
-const fadeIn = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      duration: 1.2,
-      ease: "easeOut"
-    }
-  }
-};
 
-const parallaxEffect = {
-  visible: { 
-    y: 0,
-    transition: {
-      duration: 0.8,
-      ease: "easeOut"
-    }
-  }
-};
+
 
 export default function Aboutus() {
   return (
@@ -116,7 +98,7 @@ export default function Aboutus() {
             variants={fadeInUp}
             className="text-gray-200 text-base md:text-lg mb-6"
           >
-            Whether it's a set, a prop, a painted backdrop, or a one-off installation — we handle it all, start to finish.
+            Whether it&apos;s a set, a prop, a painted backdrop, or a one-off installation — we handle it all, start to finish.
           </motion.p>
           <motion.p 
             variants={fadeInUp}
