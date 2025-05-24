@@ -78,21 +78,6 @@ const slideUp = {
   }
 };
 
-const scaleIn = {
-  hidden: { 
-    opacity: 0,
-    scale: 0.95
-  },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      duration: 0.6,
-      ease: "easeOut"
-    }
-  }
-};
-
 export default function WhatWe() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const current = caseStudies[currentIndex];
