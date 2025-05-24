@@ -55,24 +55,25 @@ const item = {
 const fadeIn = {
   hidden: {
     opacity: 0,
-    scale: 0.95                 // Ligero escalado inicial
+    scale: 0.95
   },
   visible: {
     opacity: 1,
     scale: 1,
     transition: {
       duration: 0.7,
-      ease: "backOut"           // Easing con pequeño rebote
+      ease: "backOut"
     }
   }
 };
+
 export default function WhatWe() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const current = caseStudies[currentIndex];
 
   return (
     <>
-      {/* Hero Section with professional fade-in */}
+      {/* Hero Section - Mejorado contraste */}
       <motion.section 
         initial="hidden"
         animate="visible"
@@ -87,9 +88,11 @@ export default function WhatWe() {
           playsInline 
           muted 
         />
+        {/* Overlay para mejor contraste */}
+        <div className="absolute inset-0 bg-black/30 z-1"></div>
       </motion.section>
 
-      {/* Main Content Section */}
+      {/* Main Content Section - Texto más legible */}
       <motion.div 
         initial="hidden"
         whileInView="visible"
@@ -98,13 +101,13 @@ export default function WhatWe() {
         className="min-h-screen bg-black text-white px-4 py-12"
       >
         <div className="max-w-6xl mx-auto">
-          <motion.h2 variants={item} className="text-4xl md:text-5xl font-semibold text-green-400 mb-4">
+          <motion.h2 variants={item} className="text-4xl md:text-5xl font-bold text-emerald-400 mb-4">
             From concept to creation,
             <br />
-            <motion.span variants={item} className="text-white">we build bold ideas</motion.span>
+            <motion.span variants={item} className="text-white font-semibold">we build bold ideas</motion.span>
           </motion.h2>
           
-          <motion.p variants={item} className="text-gray-300 mb-10 max-w-2xl">
+          <motion.p variants={item} className="text-gray-200 text-lg mb-10 max-w-2xl">
             From film sets to immersive installations, we design, construct and craft with purpose. Every detail is considered — every project, one of a kind.
           </motion.p>
 
@@ -129,13 +132,13 @@ export default function WhatWe() {
                 <motion.div 
                   initial={{ opacity: 0 }}
                   whileHover={{ opacity: 1 }}
-                  className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4"
+                  className="absolute inset-0 bg-black/80 flex flex-col justify-center items-center p-4"
                 >
-                  <h3 className="text-xl font-semibold text-green-400">{event.title}</h3>
+                  <h3 className="text-xl font-bold text-emerald-400 mb-2">{event.title}</h3>
                   <motion.button 
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="mt-4 bg-green-400 text-black px-4 py-2 rounded text-sm font-medium"
+                    className="mt-4 bg-emerald-400 text-black px-4 py-2 rounded text-sm font-semibold"
                   >
                     Learn more
                   </motion.button>
@@ -146,7 +149,7 @@ export default function WhatWe() {
         </div>
       </motion.div>
 
-      {/* Case Studies Section */}
+      {/* Case Studies Section - Texto más visible */}
       <div className="relative min-h-screen text-white">
         <AnimatePresence mode="wait">
           <motion.div
@@ -163,6 +166,8 @@ export default function WhatWe() {
               fill
               className="object-cover z-0"
             />
+            {/* Overlay más oscuro para mejor contraste */}
+            <div className="absolute inset-0 bg-black/50 z-1"></div>
           </motion.div>
         </AnimatePresence>
 
@@ -171,47 +176,48 @@ export default function WhatWe() {
           whileInView="visible"
           variants={container}
           viewport={{ once: true }}
-          className="absolute inset-0 bg-black bg-opacity-60 z-10 flex flex-col justify-end p-6 md:p-12"
+          className="absolute inset-0 z-10 flex flex-col justify-end p-6 md:p-12"
         >
-          <motion.h2 variants={item} className="text-3xl md:text-4xl font-semibold mb-4">Case Studies</motion.h2>
+          <motion.h2 variants={item} className="text-3xl md:text-4xl font-bold mb-4 text-white">Case Studies</motion.h2>
 
           <motion.div variants={item} className="max-w-xl">
-            <motion.h3 variants={item} className="text-2xl text-green-400 font-semibold">{current.title}</motion.h3>
-            <motion.p variants={item} className="text-sm mb-6">{current.subtitle}</motion.p>
+            <motion.h3 variants={item} className="text-2xl md:text-3xl font-bold text-emerald-400 mb-2">{current.title}</motion.h3>
+            <motion.p variants={item} className="text-base md:text-lg text-gray-200 mb-6">{current.subtitle}</motion.p>
 
             <motion.div variants={item} className="flex items-center justify-between">
               <div className="flex items-center gap-4">
                 <motion.button 
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="text-green-400 text-2xl" 
+                  className="text-emerald-400 text-2xl hover:text-white transition-colors" 
                   onClick={() => setCurrentIndex((prev) => (prev === 0 ? caseStudies.length - 1 : prev - 1))}
                 >
                   &#x276E;
                 </motion.button>
                 <motion.button 
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 1.05, backgroundColor: "#34d399" }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-green-400 text-black font-semibold px-4 py-2 text-sm rounded hover:bg-green-500"
+                  className="bg-emerald-400 text-black font-bold px-6 py-2 text-sm rounded hover:bg-emerald-500 transition-colors"
                 >
                   VIEW CASE STUDY
                 </motion.button>
                 <motion.button 
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="text-green-400 text-2xl" 
+                  className="text-emerald-400 text-2xl hover:text-white transition-colors" 
                   onClick={() => setCurrentIndex((prev) => (prev === caseStudies.length - 1 ? 0 : prev + 1))}
                 >
                   &#x276F;
                 </motion.button>
               </div>
-              <motion.span className="text-sm text-green-400">{`${currentIndex + 1} / ${caseStudies.length}`}</motion.span>
+              <motion.span className="text-sm font-medium text-emerald-400">{`${currentIndex + 1} / ${caseStudies.length}`}</motion.span>
               <motion.button 
                 whileHover={{ 
-                  backgroundColor: "#4ADE80",
-                  color: "#000"
+                  backgroundColor: "#34d399",
+                  color: "#000",
+                  borderColor: "#34d399"
                 }}
-                className="border border-green-400 text-green-400 px-4 py-2 text-sm rounded"
+                className="border border-emerald-400 text-emerald-400 px-4 py-2 text-sm rounded font-medium hover:bg-emerald-400 hover:text-black transition-colors"
               >
                 VIEW ALL
               </motion.button>
