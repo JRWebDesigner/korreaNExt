@@ -39,27 +39,6 @@ export default function Contact() {
         viewport={{ once: true, amount: 0.2 }}
         className="bg-black text-white px-6 py-12 space-y-12"
       >
-        <motion.section variants={fadeInUp} className="max-w-6xl mx-auto">
-          <h2 className="text-3xl text-green-400 font-semibold mb-4">New York</h2>
-          <address className="not-italic leading-relaxed">
-            <p>Event Concept Inc.</p>
-            <p>61 Greenpoint Ave #603</p>
-            <p>Brooklyn, NY 11222</p>
-            <p className="mt-2">
-              <a href="tel:+19292516994" className="text-green-400 underline">+1 (929) 251 6994</a><br />
-              <a href="mailto:info@eventconcept.com" className="text-green-400 underline">info@eventconcept.com</a>
-            </p>
-          </address>
-
-          <div className="mt-8">
-            <iframe
-              src="https://www.google.com/maps?q=61+Greenpoint+Ave+%23603,+Brooklyn,+NY+11222&output=embed"
-              className="w-full h-96 border-0"
-              allowFullScreen
-              loading="lazy"
-            ></iframe>
-          </div>
-        </motion.section>
 
         <motion.section variants={fadeInUp} className="max-w-6xl mx-auto">
           <h2 className="text-3xl text-green-400 font-semibold mb-4">Get in touch</h2>
