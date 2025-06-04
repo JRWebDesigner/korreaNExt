@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link'
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -55,63 +56,49 @@ Enabling you to create an experience that matters for the people that matter to 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="relative h-80 md:h-[500px]">
           <Image
-            src="/img/soluciones-mundial.jpg"
+            src="/index/soluciones-mundial.webp"
             alt="Soluciones integrales"
             fill
-            className="object-cover rounded"
+            className="object-cover rounded relative z-0"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-4">
+          <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center px-4 z-10">
             <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4">
-              Soluciones integrales a nivel mundial
+              Comprehensive solutions worldwide
             </h3>
-            <button className="bg-green-400 text-black px-4 sm:px-6 py-2 font-medium rounded text-sm sm:text-base">
-              DESCUBRA NUESTRA EXPERIENCIA
-            </button>
           </div>
         </div>
 
         <div className="relative h-80 md:h-[500px]">
           <Image
-            src="/img/eventos-londres.jpg"
+            src="/index/eventos-londres.webp"
             alt="Eventos en Londres"
             fill
             className="object-cover rounded"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-4">
+          <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center px-4">
             <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4">
-              Especialistas en producción de eventos en Londres
+              Event production specialists in London
             </h3>
-            <button className="bg-green-400 text-black px-4 sm:px-6 py-2 font-medium rounded text-sm sm:text-base">
-              DESCUBRE MÁS
-            </button>
           </div>
         </div>
       </div>
     </section>
-	    <section className="relative w-full h-[90vh] md:h-screen">
-      <Image
-        src="/img/guap-gala.jpg" // Asegúrate de que esta imagen esté en public/img/
-        alt="Evento G"
-        fill
-        className="object-cover"
-        priority
-      />
-
-      <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-start p-6 md:p-16">
-        <div className="max-w-2xl text-left text-white">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-300 leading-tight mb-4">
-            Celebrate,<br />
-            communicate,<br />
+	    <section className="relative w-full h-[70dvh] md:h-[60dvh] bg-[url('/index/guap-gala.webp')] bg-fixed bg-cover bg-norepeat">
+      <div className="absolute inset-0 bg-black/30 bg-opacity-60 flex items-center justify-center p-6 md:p-16">
+        <div className="max-w-2xl text-white">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-skyblue-500 text-center mb-4">
+            Celebrate,
+            communicate,
             inspire, educate.
           </h2>
 
-          <p className="text-sm sm:text-base text-gray-200 mb-6">
+          <p className="sm:text-base text-white font-semibold mb-6">
             From the strictly professional to the deeply personal, our work encompasses everything from exhibitions and brand experiences, to conferences and launches, to awards, receptions, dinners and more. Whether live, virtual or hybrid, they all share the power to bring people together and deliver an experience that lasts.
           </p>
 
-          <button className="bg-green-300 text-black font-medium px-6 py-2 rounded text-sm sm:text-base">
+          <Link href='/our-work' className="bg-green-300 text-black font-medium px-6 py-2 rounded text-sm sm:text-base">
             VIEW OUR WORK
-          </button>
+          </Link>
         </div>
       </div>
     </section>
@@ -147,21 +134,21 @@ Enabling you to create an experience that matters for the people that matter to 
     </section>
 	    <section className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh] flex items-center justify-center text-center">
       <Image
-        src="/img/fondo-agencia.jpg" // Asegúrate de que esta imagen esté en public/img/
+        src="/index/fondo-agencia.webp" // Asegúrate de que esta imagen esté en public/img/
         alt="Fondo Agencia Londres"
         fill
         className="object-cover"
         priority
       />
 
-      <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center px-4">
+      <div className="absolute inset-0 bg-black/60 bg-opacity-60 flex flex-col items-center justify-center px-4">
         <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-semibold max-w-3xl leading-snug mb-6">
           Born in London our creative event agency and production company delivers extraordinary events and experiences on a global scale
         </h2>
 
-        <button className="border border-green-400 text-green-400 px-6 py-2 text-sm sm:text-base font-medium rounded hover:bg-green-400 hover:text-black transition">
-          EVENT AGENCY LONDON
-        </button>
+        <Link href="/contact" className="border border-green-400 text-green-400 px-6 py-2 text-sm sm:text-base font-medium rounded hover:bg-green-400 hover:text-black transition uppercase">
+          Contact now
+        </Link>
       </div>
     </section>
     </>
