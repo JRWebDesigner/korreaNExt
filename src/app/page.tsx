@@ -32,28 +32,18 @@ const [indice, setIndice] = useState(0);
 	      <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoPlay loop playsInline muted>
 	      </video>
       </section>
-      <section className="bg-[url(/svg.svg)] bg-cover bg-center h-[90dvh] w-full flex justify-center items-center flex-col gap-10 p-6">
-          <h1 className="md:mx-22 font-bold text-center text-green-400">
-            Creative Event Agency &
-Event Production Company
-          </h1>
-          <p className="md:mx-22 text-center font-medium text-blue-300">
-          We blend creative agency thinking with production company doing to deliver extraordinary events and everlasting experiences
-<br />
-Enabling you to create an experience that matters for the people that matter to you
-          </p>
-      </section>
-	    <section className="bg-black text-white py-16 px-4 md:px-20">
+     
+	    <section className="py-16 px-4 md:px-20">
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <h2 className="text-3xl md:text-4xl font-semibold text-green-400">
+        <h2 className="text-3xl md:text-4xl font-semibold text-green-900">
           A scale that adapts to your ambition
         </h2>
-        <p className="text-base md:text-lg mt-4 text-gray-300">
+        <p className="text-base md:text-lg mt-4 text-black">
           Our offering has grown organically over three decades in response to our clients needs and our own commitment to excellence. The result is a unique and comprehensive set of capabilities and services, literally all under one roof. This means we can move from strategy and creativity to production and delivery in an integrated process.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="text-white grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="relative h-80 md:h-[500px]">
           <Image
             src="/index/soluciones-mundial.webp"
@@ -102,17 +92,17 @@ Enabling you to create an experience that matters for the people that matter to 
         </div>
       </div>
     </section>
-	    <section className="bg-black text-white py-16 px-4 md:px-20 text-center transition-all duration-1000">
+	    <section className="py-16 px-4 md:px-20 text-center transition-all duration-1000">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-green-400 mb-6">
+        <h2 className="text-2xl md:text-3xl font-bold text-green-900 mb-6">
           The once-in-a-lifetime, on a daily basis.
         </h2>
 
-        <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-10">
+        <p className="text-sm md:text-base leading-relaxed mb-10">
           We re trusted by some of the world’s most high-profile brands and venues to design and deliver without fail – because failure isn’t an option. We partner closely with our clients to truly understand their needs and create the perfect event based on a deep knowledge of what we know will work. Creating a shared success that lives long in the memory.
         </p>
 
-        <blockquote className="text-green-300 italic text-base md:text-lg leading-relaxed mb-6">
+        <blockquote className="text-green-700 italic text-base md:text-lg leading-relaxed mb-6">
           “{testimonios[indice].texto}”
         </blockquote>
 
