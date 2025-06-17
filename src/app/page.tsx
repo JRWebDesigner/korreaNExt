@@ -35,7 +35,7 @@ export default function Home() {
         spaceBetween={30}
          loop={true}
          autoplay={{
-            delay: 1000,
+            delay: 2500,
             disableOnInteraction: false,
           }}
         effect={'fade'}
