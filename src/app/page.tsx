@@ -30,7 +30,7 @@ export default function Home() {
         </p>
       </div>
     </section>
-	<section className="grid md:grid-cols-2 grid-cols-1 place-items-center p-7">
+	<section className="md:grid md:grid-cols-2 flex flex-reverse justify-center items-center place-items-center p-7">
       <Swiper
         spaceBetween={30}
          loop={true}
