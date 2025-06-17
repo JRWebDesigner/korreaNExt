@@ -2,124 +2,71 @@
 import Link from 'next/link'
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectFade, Autoplay } from 'swiper/modules';
 
-const testimonios = [
-  {
-    texto:
-      "I wanted to send my gratitude to you and the team for helping us deliver this event and for working with us with the many requests and changes we threw your way. The long hours that your team worked through is not unnoticed. Everyone remarked on how brilliantly professional and polished the event looked, which is entirely down to your team.",
-    autor: "Foreign, Commonwealth & Development Office",
-  },
-	{
-    texto:
-      "2.- I wanted to send my gratitude to you and the team for helping us deliver this event and for working with us with the many requests and changes we threw your way. The long hours that your team worked through is not unnoticed. Everyone remarked on how brilliantly professional and polished the event looked, which is entirely down to your team.",
-    autor: "Foreign, Commonwealth & Development Office",
-  },
-  // Puedes agregar más testimonios aquí si lo deseas
-];
-//Rossy te amo y extraño
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+
+
 export default function Home() {
-const [indice, setIndice] = useState(0);
-
-  useEffect(() => {
-    const intervalo = setInterval(() => {
-      setIndice((prev) => (prev + 1) % testimonios.length);
-    }, 7000); // Cambia cada 7 segundos
-    return () => clearInterval(intervalo);
-  }, []);
+ const navLinks = [
+    { href: '/about-us', label: 'About us' },
+    { href: '/what-we', label: 'What we do' },
+    { href: '/our-work', label: 'Our work' },
+  ];
+  
   return (
     <>
       <section className="relative h-[70dvh] md:h-[100dvh] bg-black">
 	      <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoPlay loop playsInline muted>
 	      </video>
       </section>
-     
-	    <section className="py-16 px-4 md:px-20">
+	    <section className="bg-[url('/index/guap-gala.webp')] bg-black/50 bg-cover bg-norepeat py-16 px-4 md:px-20 flex flex-wrap">
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <h2 className="text-3xl md:text-4xl font-semibold text-green-900">
-          A scale that adapts to your ambition
-        </h2>
-        <p className="text-base md:text-lg mt-4 text-black">
-          Our offering has grown organically over three decades in response to our clients needs and our own commitment to excellence. The result is a unique and comprehensive set of capabilities and services, literally all under one roof. This means we can move from strategy and creativity to production and delivery in an integrated process.
+        <h1 className="text-3xl md:text-4xl font-semibold text-green-400">
+          From Concept to Completion — We Bring Ideas to Life
+        </h1>
+        <p className="text-base md:text-lg mt-4 text-white">
+          Korrea Studio is a creative workshop based in London, run by artists passionate about design and fabrication. We design and build bold, physical work that leaves a mark. From initial sketches to final pieces, we take your vision and turn it into environments, objects, and experiences that demand attention.
         </p>
-      </div>
-
-      <div className="text-white grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="relative h-80 md:h-[500px]">
-          <Image
-            src="/index/soluciones-mundial.webp"
-            alt="Soluciones integrales"
-            fill
-            className="object-cover rounded relative z-0"
-          />
-          <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center px-4 z-10">
-            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4">
-              Comprehensive solutions worldwide
-            </h3>
-          </div>
-        </div>
-
-        <div className="relative h-80 md:h-[500px]">
-          <Image
-            src="/index/eventos-londres.webp"
-            alt="Eventos en Londres"
-            fill
-            className="object-cover rounded"
-          />
-          <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center px-4">
-            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4">
-              Event production specialists in London
-            </h3>
-          </div>
-        </div>
+         <p className="text-base md:text-lg mt-4 text-white">
+          Whether it’s a set, a prop, a painted backdrop, or a one-off installation — we handle it all, start to finish. With creative direction, design, fabrication, and scenic art, we make your ideas real — and impactful.
+        </p>
       </div>
     </section>
-	    <section className="relative w-full h-[70dvh] md:h-[60dvh] bg-[url('/index/guap-gala.webp')] bg-fixed bg-cover bg-norepeat">
-      <div className="absolute inset-0 bg-black/30 bg-opacity-60 flex items-center justify-center p-6 md:p-16">
-        <div className="max-w-2xl text-white">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-skyblue-500 text-center mb-4">
-            Celebrate,
-            communicate,
-            inspire, educate.
-          </h2>
-
-          <p className="sm:text-base text-white font-semibold mb-6">
-            From the strictly professional to the deeply personal, our work encompasses everything from exhibitions and brand experiences, to conferences and launches, to awards, receptions, dinners and more. Whether live, virtual or hybrid, they all share the power to bring people together and deliver an experience that lasts.
-          </p>
-
-          <Link href='/our-work' className="bg-green-300 text-black font-medium px-6 py-2 rounded text-sm sm:text-base">
-            VIEW OUR WORK
-          </Link>
-        </div>
-      </div>
-    </section>
-	    <section className="py-16 px-4 md:px-20 text-center transition-all duration-1000">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-green-900 mb-6">
-          The once-in-a-lifetime, on a daily basis.
-        </h2>
-
-        <p className="text-sm md:text-base leading-relaxed mb-10">
-          We re trusted by some of the world’s most high-profile brands and venues to design and deliver without fail – because failure isn’t an option. We partner closely with our clients to truly understand their needs and create the perfect event based on a deep knowledge of what we know will work. Creating a shared success that lives long in the memory.
+	<section className="grid md:grid-cols-2 grid-cols-1 place-items-center p-7">
+      <Swiper
+        spaceBetween={30}
+         loop={true}
+         autoplay={{
+            delay: 1000,
+            disableOnInteraction: false,
+          }}
+        effect={'fade'}
+        modules={[EffectFade,Autoplay]}
+        className="w-full h-[400px] text-gree-500"
+      >
+        <SwiperSlide>
+          <img className='object-cover w-full object-center' src="/about-us/experiencias.webp" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className='object-cover w-full object-center' src="/about-us/creatividad.webp" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className='object-cover w-full object-center' src="/what-we/conferences.webp" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className='object-center object-cover w-full h-[400px]' src="/what-we/dinners.webp" />
+        </SwiperSlide>
+      </Swiper>
+      <div className='md:text-right flex flex-col items-end gap-10'>
+        <h2>We Bring Ideas to Life</h2>
+        <p>
+        Our London studio combines design and fabrication under one roof. We turn your vision into environments, props, installations, and experiences that demand attention.
         </p>
-
-        <blockquote className="text-green-700 italic text-base md:text-lg leading-relaxed mb-6">
-          “{testimonios[indice].texto}”
-        </blockquote>
-
-        <p className="text-sm md:text-base font-semibold text-white">
-          {testimonios[indice].autor}
-        </p>
-
-        <div className="flex justify-center mt-8 gap-2">
-          {testimonios.map((_, i) => (
-            <span
-              key={i}
-              className={`h-3 w-3 rounded-full transition-colors duration-500 ${
-                i === indice ? "bg-green-400" : "bg-gray-600"
-              }`}
-            />
-          ))}
-        </div>
+        <Link href='/about-us' className='flex shadow-xl px-9 py-5 rounded-2xl text-white bg-green-700 hover:scale-105 hover:bg-green-600 duration-300'>Explore Our Work</Link>
       </div>
     </section>
 	    <section className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh] flex items-center justify-center text-center">
