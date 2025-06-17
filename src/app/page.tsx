@@ -1,7 +1,6 @@
 "use client"
 import Link from 'next/link'
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Autoplay } from 'swiper/modules';
 
@@ -11,12 +10,7 @@ import 'swiper/css/effect-fade';
 
 
 export default function Home() {
- const navLinks = [
-    { href: '/about-us', label: 'About us' },
-    { href: '/what-we', label: 'What we do' },
-    { href: '/our-work', label: 'Our work' },
-  ];
-  
+ 
   return (
     <>
       <section className="relative h-[70dvh] md:h-[100dvh] bg-black">
