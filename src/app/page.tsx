@@ -40,22 +40,22 @@ export default function Home() {
           }}
         effect={'fade'}
         modules={[EffectFade,Autoplay]}
-        className="w-full h-[400px] text-gree-500"
+        className="w-full h-[300px] md:h-[400px] text-gree-500"
       >
         <SwiperSlide>
-          <img className='object-cover w-full object-center' src="/about-us/experiencias.webp" />
+          <img className='object-cover w-full object-center w-full h-[300px] md:h-[400px]' src="/about-us/experiencias.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='object-cover w-full object-center' src="/about-us/creatividad.webp" />
+          <img className='object-cover w-full object-center w-full h-[300px] md:h-[400px]' src="/about-us/creatividad.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='object-cover w-full object-center' src="/what-we/conferences.webp" />
+          <img className='object-cover w-full object-center w-full h-[300px] md:h-[400px]' src="/what-we/conferences.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='object-center object-cover w-full h-[400px]' src="/what-we/dinners.webp" />
+          <img className='object-center object-cover w-full h-[300px] md:h-[400px]' src="/what-we/dinners.webp" />
         </SwiperSlide>
       </Swiper>
-      <div className='md:text-right flex flex-col items-end gap-10'>
+      <div className='text-center md:text-right flex flex-col items-center md:items-end gap-6 md:gap-10'>
         <h2>We Bring Ideas to Life</h2>
         <p>
         Our London studio combines design and fabrication under one roof. We turn your vision into environments, props, installations, and experiences that demand attention.
