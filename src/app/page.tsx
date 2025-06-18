@@ -17,7 +17,7 @@ export default function Home() {
 	      <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoPlay loop playsInline muted>
 	      </video>
       </section>
-	    <section className="bg-[url('/index/guap-gala.webp')] bg-black/50 bg-cover bg-norepeat py-16 px-4 md:px-20 flex flex-wrap">
+	    <section className="bg-black bg-cover bg-norepeat py-16 px-4 md:px-20 flex flex-col flex-wrap">
       <div className="text-center max-w-3xl mx-auto mb-12">
         <h1 className="text-3xl md:text-4xl font-semibold text-green-400">
           From Concept to Completion — We Bring Ideas to Life
@@ -29,6 +29,7 @@ export default function Home() {
           Whether it’s a set, a prop, a painted backdrop, or a one-off installation — we handle it all, start to finish. With creative direction, design, fabrication, and scenic art, we make your ideas real — and impactful.
         </p>
       </div>
+      <Link href='/about-us' className='flex w-[240px] justify-center shadow-xl mx-auto py-5 rounded-2xl text-white bg-green-700 hover:scale-105 hover:bg-green-600 duration-300'>Explore Our Work</Link>
     </section>
 	<section className="md:grid md:grid-cols-2 flex flex-col-reverse justify-center items-center place-items-center p-7">
       <Swiper
@@ -60,7 +61,7 @@ export default function Home() {
         <p>
         Our London studio combines design and fabrication under one roof. We turn your vision into environments, props, installations, and experiences that demand attention.
         </p>
-        <Link href='/about-us' className='flex shadow-xl px-9 py-5 rounded-2xl text-white bg-green-700 hover:scale-105 hover:bg-green-600 duration-300'>Explore Our Work</Link>
+        
       </div>
     </section>
 	    <section className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh] flex items-center justify-center text-center">
