@@ -94,7 +94,7 @@ export default function Home() {
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-2 text-center font-bold">Creative Installation {i}</h3>
-                    <button variant="ghost" className="text-center mx-auto hover:text-green-900 p-0">
+                    <button className="text-center mx-auto hover:text-green-900 p-0">
                       View details
                     </button>
                   </div>
