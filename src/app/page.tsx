@@ -79,7 +79,9 @@ export default function Home() {
             viewport={{ once: true, margin: "-100px" }}
           >
             {[1, 2, 3].map((i) => (
-              <motion.div
+              <motion.div 
+                key={i}
+                variants={scaleUp}
               >
                 <div className="bg-white border-gray-800 overflow-hidden hover:border-gray-600 transition-colors group h-full rounded-2xl w-[500px] lg:w-[1100px] mx-auto">
                   <div className="relative h-[600px] overflow-hidden">
