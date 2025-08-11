@@ -1,7 +1,6 @@
 "use client"
 import Link from 'next/link'
-import { EffectFade, Autoplay } from 'swiper/modules';
-import { motion, AnimatePresence } from "framer-motion"
+import { motion} from "framer-motion"
 
 const fadeIn = {
   hidden: { opacity: 0 },
