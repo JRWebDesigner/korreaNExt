@@ -54,7 +54,7 @@ export default function Home() {
 	      <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoPlay loop playsInline muted>
 	      </video>
       </section>
-	    <section className="bg-black py-16 px-4 md:px-20 flex flex-col flex-wrap items-center">
+	    <section className="bg-black py-16 px-4 md:px-20 flex flex-col flex-wrap items-center mb-16">
       <div className="container text-center mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-white">
           From Concept to Completion — We Bring Ideas to Life
@@ -67,9 +67,9 @@ export default function Home() {
         </p>
       </div>
     </section>
-	<section className="mt-10">
+	<section className="my-22">
 	   <motion.div 
-            className="container mx-auto flex flex-wrap gap-16 justify-center items-center"
+            className="container mx-auto flex flex-wrap gap-[130px] justify-center items-center"
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
@@ -105,12 +105,6 @@ export default function Home() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2 text-center font-bold">Creative Installation {i}</h3>
-                    <button className="text-center mx-auto hover:text-green-900 p-0">
-                      View details
-                    </button>
                   </div>
                 </div>
               </motion.div>
