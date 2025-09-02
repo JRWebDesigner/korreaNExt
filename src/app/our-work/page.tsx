@@ -17,21 +17,20 @@ const eventData = [
 export default function Ourwork(){
   return(
     <>
-      
-      <div className="min-h-screen bg-white px-4 py-12">
-      <div className="max-w-6xl mx-auto">
-        <div className="container mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-4 text-center">
+      <section className="relative h-[70dvh] md:h-[80dvh] bg-black flex justify-end items-center">
+<div className="container mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 text-center">
               Events may come and go,
               <br />
               <span className="">experiences stay</span>
             </h2>
-            <p className="mb-10 text-center">
+            <p className="text-center text-white">
               We work across the full spectrum of business events, brand experiences and personal occasions. Whether your guest list includes the great and the good, or your nearest and dearest, you can relax knowing each event is meticulously planned and flawlessly delivered. Live, virtual or hybrid, they all share the power to create a lasting impression that lives long in the memory.
             </p>
         </div>
-        
-
+      </section>
+      <div className="min-h-screen bg-white px-4 py-12">
+      <div className="max-w-6xl mx-auto">
         <div className="grid gap-14 md:grid-cols-2">
           {eventData.map((event, index) => (
             <div
