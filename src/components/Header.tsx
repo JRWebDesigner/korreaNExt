@@ -34,7 +34,7 @@ export default function Header() {
           <img src="/logo.png" alt="Logo" className="h-16" />
         </Link>
         <div className="fixed bottom-4 text-white">
-          <button onClick={() => setMenuOpen(!menuOpen)} className="text-3xl md:text-5xl hover:scale-110 p-3 bg-black rounded-full">
+          <button onClick={() => setMenuOpen(!menuOpen)} className="text-3xl md:text-4xl hover:scale-110 p-3 bg-black rounded-full">
             {menuOpen ? <FiX /> : <FiMenu />}
           </button>
         </div>

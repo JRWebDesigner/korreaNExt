@@ -52,7 +52,7 @@ export default function Home() {
         </p>
       </div>
     </section>
-	<section className="my-22">
+	<section className="my-[130px]">
 	   <motion.div 
             className="container mx-auto flex flex-wrap gap-[130px] justify-center items-center"
             variants={staggerContainer}
