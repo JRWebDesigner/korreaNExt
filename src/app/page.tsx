@@ -2,22 +2,7 @@
 import Link from 'next/link'
 import { motion} from "framer-motion"
 
-const fadeIn = {
-  hidden: { opacity: 0 },
-  visible: { 
-    opacity: 1,
-    transition: { duration: 0.6, ease: "easeOut" }
-  }
-};
 
-const slideUp = {
-  hidden: { y: 50, opacity: 0 },
-  visible: { 
-    y: 0, 
-    opacity: 1,
-    transition: { duration: 0.7, ease: "easeOut" }
-  }
-};
 
 const staggerContainer = {
   hidden: { opacity: 0 },

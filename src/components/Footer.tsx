@@ -1,6 +1,5 @@
 "use client"
 import { FaInstagram } from "react-icons/fa";
-import Image from "next/image";
 import Link from "next/link";
 export default function Footer(){
   return(
