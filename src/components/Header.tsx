@@ -33,8 +33,8 @@ export default function Header() {
         <Link href="/">
           <img src="/logo.png" alt="Logo" className="h-16" />
         </Link>
-        <div className="md:hidden">
-          <button onClick={() => setMenuOpen(!menuOpen)} className="text-3xl">
+        <div className="fixed bottom-4 text-white">
+          <button onClick={() => setMenuOpen(!menuOpen)} className="text-3xl md:text-5xl hover:scale-110 p-3 bg-black rounded-full">
             {menuOpen ? <FiX /> : <FiMenu />}
           </button>
         </div>
@@ -56,7 +56,7 @@ export default function Header() {
     >
       <button
         onClick={() => setMenuOpen(false)}
-        className="absolute top-6 right-6 text-4xl text-white"
+        className="absolute bottom-0 text-4xl text-white hover:scale-110"
       >
         <FiX />
       </button>
