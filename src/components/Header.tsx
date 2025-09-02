@@ -38,7 +38,7 @@ export default function Header() {
             {menuOpen ? <FiX /> : <FiMenu />}
           </button>
         </div>
-        <ul className="hidden md:flex gap-8 text-2xl font-medium tracking-wide">
+        <ul className="hidden gap-8 text-2xl font-medium tracking-wide">
           {navLinks.map(({ href, label }) => (
             <li key={href} className="hover:text-green-400 transition-colors">
               <Link href={href}>{label}</Link>
