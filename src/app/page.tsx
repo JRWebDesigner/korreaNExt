@@ -42,15 +42,20 @@ const scaleUp = {
   }
 };
 export default function Home() {
- 
+   const navLinks = [
+    { href: '/our-work', label: 'Our work' },
+    { href: '/services', label: 'Services' },
+    { href: '/about-us', label: 'About us' },
+    { href: '/contact', label: 'Contact' },
+  ];
   return (
     <>
       <section className="relative h-[70dvh] md:h-[100dvh] bg-black">
 	      <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoPlay loop playsInline muted>
 	      </video>
       </section>
-	    <section className="bg-black bg-cover bg-norepeat py-16 px-4 md:px-20 flex flex-col flex-wrap">
-      <div className="container text-center mx-auto mb-12">
+	    <section className="bg-black py-16 px-4 md:px-20 flex flex-col flex-wrap items-center">
+      <div className="container text-center mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-white">
           From Concept to Completion — We Bring Ideas to Life
         </h1>
@@ -61,9 +66,8 @@ export default function Home() {
           Whether it’s a set, a prop, a painted backdrop, or a one-off installation — we handle it all, start to finish. With creative direction, design, fabrication, and scenic art, we make your ideas real — and impactful.
         </p>
       </div>
-      <Link href='/about-us' className='flex w-[240px] justify-center shadow-xl mx-auto py-5 rounded-2xl text-black bg-white hover:scale-105 duration-300'>Explore Our Work</Link>
     </section>
-	<section>
+	<section className="mt-10">
 	   <motion.div 
             className="container mx-auto flex flex-wrap gap-16 justify-center items-center"
             variants={staggerContainer}
@@ -71,6 +75,23 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
           >
+              <motion.div 
+                variants={scaleUp}
+              >
+                <div className="bg-white border-gray-800 overflow-hidden hover:border-gray-600 transition-colors group h-full rounded-2xl w-[500px] lg:w-[1100px] mx-auto">
+                  <div className="relative h-[600px] overflow-hidden flex flex-col justify-center items-center text-white text-center">
+          
+                    <div className="absolute inset-0 bg-black" />
+                    <ul className="relative z-20 flex flex-col gap-8 text-3xl md:text-5xl  font-medium tracking-wide">
+                    {navLinks.map(({ href, label }) => (
+                      <li key={href} className="hover:text-green-400 transition-colors">
+                        <Link href={href}>{label}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                  </div>
+                </div>
+              </motion.div>
             {[1, 2, 3].map((i) => (
               <motion.div 
                 key={i}
@@ -94,6 +115,7 @@ export default function Home() {
                 </div>
               </motion.div>
             ))}
+
           </motion.div>
 	</section>
 	<section id="about" className="py-24 bg-black">
