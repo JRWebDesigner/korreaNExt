@@ -64,13 +64,6 @@ export default function Home() {
       <Link href='/about-us' className='flex w-[240px] justify-center shadow-xl mx-auto py-5 rounded-2xl text-black bg-white hover:scale-105 duration-300'>Explore Our Work</Link>
     </section>
 	<section>
-	  <nav className="container mx-auto flex justify-around items-center my-8">
-	    <Link className="px-4 py-2 rounded-xl border-green-800 border-2 hover:bg-green-800 hover:text-white duration-300" href="/about-us">ABOUT US</Link>
-	    <Link className="px-4 py-2 rounded-xl border-green-800 border-2 hover:bg-green-800 hover:text-white duration-300" href="/our-work">OUR WORK</Link>
-	    <Link className="px-4 py-2 rounded-xl border-green-800 border-2 hover:bg-green-800 hover:text-white duration-300" href="/contact">CONTACT</Link>
-	  </nav>
-	</section>
-	<section>
 	   <motion.div 
             className="container mx-auto flex flex-wrap gap-16 justify-center items-center"
             variants={staggerContainer}
