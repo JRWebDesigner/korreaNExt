@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import { useState } from "react";
+
 
 const eventData = [
   { title: "Title", image: "/brand.jpg" },
@@ -13,24 +13,8 @@ const eventData = [
   { title: "Live Shows", image: "/live.jpg" },
 ];
 
-const caseStudies = [
-  {
-    title: "GUAP Gala",
-    subtitle: "Guap Gala Dinner",
-    image: "/guap-gala.jpg",
-  },
-{
-    title: "GUAP Gala",
-    subtitle: "Guap Gala Dinner",
-    image: "/guap-gala.jpg",
-  },
-  // Puedes agregar más elementos aquí si quieres un slider funcional
-];
 
 export default function Ourwork(){
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const current = caseStudies[currentIndex];
-
   return(
     <>
       
