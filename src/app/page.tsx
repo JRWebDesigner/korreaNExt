@@ -112,74 +112,7 @@ export default function Home() {
 
           </motion.div>
 	</section>
-	<section id="about" className="py-24 bg-black">
-        <div className="container mx-auto px-4 lg:px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={slideUp}
-              className="text-white"
-            >
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-                Experts in Creating
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-800">
-                  Unique Experiences
-                </span>
-              </h2>
-              <p className="text-xl mb-8">
-                Korrea Studio is a creative workshop based in London, run by artists passionate about design and fabrication. We design and build bold, physical work that leaves a mark. From initial sketches to final pieces, we take your vision and turn it into environments, objects, and experiences that demand attention.
-              </p>
-
-              <motion.div 
-                className="grid sm:grid-cols-3 gap-8 mb-8"
-                variants={staggerContainer}
-                initial="hidden"
-                animate="visible"
-              >
-                <motion.div 
-                  className="text-center"
-                  variants={fadeIn}
-                >
-                  <div className="text-2xl font-bold text-gray-100">50+</div>
-                  <div className="text-gray-200">Projects</div>
-                </motion.div>
-                <motion.div 
-                  className="text-center"
-                  variants={fadeIn}
-                >
-                  <div className="text-2xl font-bold text-gray-100">30+</div>
-                  <div className="text-gray-200">Clients</div>
-                </motion.div>
-                <motion.div 
-                  className="text-center"
-                  variants={fadeIn}
-                >
-                  <div className="text-2xl font-bold text-gray-100">5+</div>
-                  <div className="text-gray-200">Years</div>
-                </motion.div>
-              </motion.div>
-
-              <Link href="/about-us" className="p-4 rounded-xl bg-white text-black hover:bg-green-900 hover:text-white duration-300">
-                Learn More 
-              </Link>
-            </motion.div>
-
-            <motion.div 
-              className="relative"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
-            >
-              <img
-                src="/index/fondo-agencia.webp"
-                alt="Korrea Studio Workspace"
-                className="w-[500px] h-auto rounded-lg"
-              />
-            </motion.div>
-          </div>
-        </div>
-      </section>
+	
     </>
   );
 }
