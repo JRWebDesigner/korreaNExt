@@ -92,7 +92,7 @@ export default function Home() {
                   </div>
                 </div>
               </motion.div>
-            {[1, 2, 3].map((i) => (
+            {[1, 2].map((i) => (
               <motion.div 
                 key={i}
                 variants={scaleUp}
