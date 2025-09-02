@@ -33,10 +33,7 @@ export default function Ourwork(){
 
   return(
     <>
-      <section className="relative h-[130dvh] bg-black">
-	      <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoPlay loop playsInline muted>
-	      </video>
-      </section>
+      
       <div className="min-h-screen bg-white px-4 py-12">
       <div className="max-w-6xl mx-auto">
         <div className="container mx-auto">
