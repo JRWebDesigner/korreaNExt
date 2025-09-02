@@ -28,7 +28,7 @@ export default function Header() {
       <header
         className={`${
           scrolled ? 'bg-black/60 shadow-md' : 'bg-transparent'
-        } text-white px-6 md:px-10 py-4 w-full flex justify-between items-center transition-all duration-500 ease-in-out flex-col gap-6`}
+        } text-white px-6 md:px-10 py-4 w-full flex justify-between items-center transition-all duration-500 ease-in-out flex-col gap-6 mt-10`}
       >
         <Link href="/">
           <img src="/logo.png" alt="Logo" className="h-16" />

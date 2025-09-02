@@ -51,7 +51,7 @@ export default function Home() {
       </section>
 	    <section className="bg-black bg-cover bg-norepeat py-16 px-4 md:px-20 flex flex-col flex-wrap">
       <div className="container text-center mx-auto mb-12">
-        <h1 className="text-3xl md:text-4xl font-semibold text-green-400">
+        <h1 className="text-3xl md:text-4xl font-bold text-white">
           From Concept to Completion — We Bring Ideas to Life
         </h1>
         <p className="text-base md:text-lg mt-4 text-white">
@@ -61,7 +61,7 @@ export default function Home() {
           Whether it’s a set, a prop, a painted backdrop, or a one-off installation — we handle it all, start to finish. With creative direction, design, fabrication, and scenic art, we make your ideas real — and impactful.
         </p>
       </div>
-      <Link href='/about-us' className='flex w-[240px] justify-center shadow-xl mx-auto py-5 rounded-2xl text-white bg-green-700 hover:scale-105 hover:bg-green-600 duration-300'>Explore Our Work</Link>
+      <Link href='/about-us' className='flex w-[240px] justify-center shadow-xl mx-auto py-5 rounded-2xl text-black bg-white hover:scale-105 duration-300'>Explore Our Work</Link>
     </section>
 	<section>
 	  <nav className="container mx-auto flex justify-around items-center my-8">
