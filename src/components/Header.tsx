@@ -28,17 +28,17 @@ export default function Header() {
       <header
         className={`${
           scrolled ? 'bg-black/60 shadow-md' : 'bg-transparent'
-        } text-white px-6 md:px-10 py-4 w-full flex justify-between items-center transition-all duration-500 ease-in-out`}
+        } text-white px-6 md:px-10 py-4 w-full flex justify-between items-center transition-all duration-500 ease-in-out flex-col gap-6`}
       >
         <Link href="/">
-          <img src="/logo.png" alt="Logo" className="h-12" />
+          <img src="/logo.png" alt="Logo" className="h-16" />
         </Link>
         <div className="md:hidden">
           <button onClick={() => setMenuOpen(!menuOpen)} className="text-3xl">
             {menuOpen ? <FiX /> : <FiMenu />}
           </button>
         </div>
-        <ul className="hidden md:flex gap-8 text-lg font-medium tracking-wide">
+        <ul className="hidden md:flex gap-8 text-2xl font-medium tracking-wide">
           {navLinks.map(({ href, label }) => (
             <li key={href} className="hover:text-green-400 transition-colors">
               <Link href={href}>{label}</Link>
