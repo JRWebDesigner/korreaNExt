@@ -35,23 +35,23 @@ export default function Home() {
   ];
   return (
     <>
-      <section className="relative h-[70dvh] md:h-[100dvh] bg-black">
+      <section className="relative h-[70dvh] md:h-[90dvh] bg-black">
 	      <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoPlay loop playsInline muted>
 	      </video>
       </section>
 	    <section className="bg-black py-16 px-4 md:px-20 flex flex-col flex-wrap items-center mb-16">
       <div className="container text-center mx-auto">
-        <h1 className="text-3xl md:text-7xl font-bold text-white">
+        <h1 className="text-3xl md:text-6xl font-bold text-white">
           From Concept to Completion 
           <br/>
           We Bring Ideas to Life
         </h1>
         <br />
         <br />
-        <p className="text-base md:text-lg mt-4 text-white">
+        <p className="text-base md:text-xl mt-4 text-white">
           Korrea Studio is a creative workshop based in London, run by artists passionate about design and fabrication. We design and build bold, physical work that leaves a mark. From initial sketches to final pieces, we take your vision and turn it into environments, objects, and experiences that demand attention.
         </p>
-         <p className="text-base md:text-lg mt-4 text-white">
+         <p className="text-base md:text-xl mt-4 text-white">
           Whether it’s a set, a prop, a painted backdrop, or a one-off installation — we handle it all, start to finish. With creative direction, design, fabrication, and scenic art, we make your ideas real — and impactful.
         </p>
       </div>

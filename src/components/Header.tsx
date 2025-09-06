@@ -24,14 +24,13 @@ export default function Header() {
   ];
 
   return (
-    <div className="absolute w-full z-50">
+    <div className="relative w-full z-50">
       <header
-        className={`${
-          scrolled ? 'bg-white/60 shadow-md' : 'bg-transparent'
-        } text-white px-6 md:px-10 py-4 w-full flex justify-between items-center transition-all duration-500 ease-in-out flex-col gap-6 mt-10`}
+        className='relative bg-black text-white px-6 md:px-10 py-4 w-full flex justify-between items-center transition-all duration-500 ease-in-out flex-col gap-6 h-[100px]'
       >
+        <img src="/logo_w.png" alt="logo" className="absolute opacity-10 w-[80%] z-10 bg-cover h-full" />
         <Link href="/">
-          <img src="/logo_w.png" alt="Logo" className="h-16" />
+          <img src="/logo_w.png" alt="Logo" className="h-22" />
         </Link>
         <div className="fixed bottom-4 text-white">
           <button onClick={() => setMenuOpen(!menuOpen)} className="text-3xl md:text-4xl hover:scale-110 p-3 bg-black rounded-full">
