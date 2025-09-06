@@ -41,9 +41,13 @@ export default function Home() {
       </section>
 	    <section className="bg-black py-16 px-4 md:px-20 flex flex-col flex-wrap items-center mb-16">
       <div className="container text-center mx-auto">
-        <h1 className="text-3xl md:text-4xl font-bold text-white">
-          From Concept to Completion — We Bring Ideas to Life
+        <h1 className="text-3xl md:text-7xl font-bold text-white">
+          From Concept to Completion 
+          <br/>
+          We Bring Ideas to Life
         </h1>
+        <br />
+        <br />
         <p className="text-base md:text-lg mt-4 text-white">
           Korrea Studio is a creative workshop based in London, run by artists passionate about design and fabrication. We design and build bold, physical work that leaves a mark. From initial sketches to final pieces, we take your vision and turn it into environments, objects, and experiences that demand attention.
         </p>
@@ -76,13 +80,12 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
           >
-             
             {[1, 2].map((i) => (
               <motion.div 
                 key={i}
                 variants={scaleUp}
               >
-                <div className="bg-white border-gray-800 overflow-hidden hover:border-gray-600 transition-colors group h-full rounded-2xl w-[500px] lg:w-[1100px] mx-auto">
+                <div className="bg-gray-600 border-gray-800 overflow-hidden hover:border-gray-600 transition-colors group h-full rounded-2xl w-[500px] lg:w-[1100px] mx-auto">
                   <div className="relative h-[600px] overflow-hidden">
                     <img
                       src={`/`}
