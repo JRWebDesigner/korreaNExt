@@ -3,7 +3,7 @@ export default function Aboutus() {
     <>
       <section className="bg-black text-white py-20 px-6 md:px-20 min-h-screen">
             <h2 className="container mx-auto text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-white">
-             From Concept to Completion — We Bring Ideas to Life
+             About Us
             </h2>
         <div className="container mx-auto opacity-70">
           <p className="mb-6 md:text-2xl">

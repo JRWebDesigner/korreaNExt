@@ -17,7 +17,7 @@ const eventData = [
 export default function Ourwork(){
   return(
     <>
-      <section className="relative h-[45dvh] bg-black flex justify-center items-start">
+      <section className="relative h-[40dvh] bg-black flex justify-center items-start">
 <div className="container mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-center">
               Our Work
