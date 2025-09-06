@@ -27,11 +27,11 @@ export default function Header() {
     <div className="absolute w-full z-50">
       <header
         className={`${
-          scrolled ? 'bg-black/60 shadow-md' : 'bg-transparent'
+          scrolled ? 'bg-white/60 shadow-md' : 'bg-transparent'
         } text-white px-6 md:px-10 py-4 w-full flex justify-between items-center transition-all duration-500 ease-in-out flex-col gap-6 mt-10`}
       >
         <Link href="/">
-          <img src="/logo.png" alt="Logo" className="h-16" />
+          <img src="/logo.png" alt="Logo" className="h-9" />
         </Link>
         <div className="fixed bottom-4 text-white">
           <button onClick={() => setMenuOpen(!menuOpen)} className="text-3xl md:text-4xl hover:scale-110 p-3 bg-black rounded-full">

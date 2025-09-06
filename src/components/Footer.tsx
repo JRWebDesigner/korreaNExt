@@ -4,15 +4,15 @@ import Link from "next/link";
 export default function Footer(){
   return(
         <footer className="relative z-50 bg-black text-white py-16 px-6 md:px-20 flex flex-col items-center justify-center w-full gap-5">
-          <img src="/logo.png" alt="logo" className="h-[80px]" />
-          <div className="text-lg flex items-center justify-center gap-7 w-full text-white">
+          <img src="/logo_w.png" alt="logo" className="absolute opacity-20 bottom-6 w-[80%] z-10" />
+          <div className="relative z-20 text-lg flex items-center justify-center gap-7 w-full text-white">
             <p className="font-medium">+44 7939 697888</p>
             <p className="font-medium">info@korreastudio.co.uk</p>
             
           <Link href="https://www.instagram.com/korreastudio?igsh=MW1kOTQza25vMW9ocw=="><FaInstagram size={20} /></Link>
          </div>
-     <p className="font-medium">London, United Kingdom</p>
-      <div className="w-full flex flex-wrap justify-center gap-6   text-xl">
+     <p className="relative z-20 font-medium">London, United Kingdom</p>
+      <div className="relative z-20 w-full flex flex-wrap justify-center gap-6   text-xl">
         <Link href="/" className="text-white font-semibold  hover:text-green-400">Home</Link>
               <Link href="/about-us" className="text-white font-semibold hover:text-green-400">About us</Link>
      
