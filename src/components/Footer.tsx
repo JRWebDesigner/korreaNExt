@@ -6,7 +6,7 @@ export default function Footer(){
         <footer className="relative z-50 bg-black text-white py-16 px-6 md:px-20 flex flex-col items-center justify-center w-full gap-5">
           <img src="/logo_w.png" alt="logo" className="absolute opacity-10 bottom-6 w-[80%] z-10" />
           <img src="/logo_w.png" alt="logo" className="h-[50px]" />
-          <div className="relative z-20 text-lg flex items-center justify-center gap-7 w-full text-white">
+          <div className="relative z-20 text-lg flex items-center justify-center gap-7 w-full text-gray-200">
             <p className="font-medium">+44 7939 697888</p>
             <p className="font-medium">info@korreastudio.co.uk</p>
             
