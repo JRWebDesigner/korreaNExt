@@ -39,8 +39,8 @@ export default function Home() {
 	      <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoPlay loop playsInline muted>
 	      </video>
       </section>
-	    <section className="bg-black py-16 px-4 md:px-20 flex flex-col flex-wrap items-center mb-16">
-      <div className="container text-center mx-auto">
+	  <section className="bg-black py-22 px-4 md:px-20 flex flex-col flex-wrap items-center mb-16">
+      <div className="container text-center mx-auto pt-12">
         <h1 className="text-3xl md:text-6xl font-bold text-white">
           From Concept to Completion 
           <br/>
@@ -48,7 +48,7 @@ export default function Home() {
         </h1>
         <br />
         <br />
-        <p className="text-base md:text-2xl mt-4 text-white font-light">
+        <p className="text-base md:text-2xl mt-4 text-white">
           Korrea Studio is a creative workshop based in London, run by artists passionate about design and fabrication. We design and build bold, physical work that leaves a mark. From initial sketches to final pieces, we take your vision and turn it into environments, objects, and experiences that demand attention.
         </p>
          <p className="text-base md:text-2xl mt-4 text-white">
