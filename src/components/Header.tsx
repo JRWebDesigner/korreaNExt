@@ -20,9 +20,9 @@ export default function Header() {
       <header
         className='relative bg-black text-white px-6 md:px-10 py-4 w-full flex justify-center items-center transition-all duration-500 ease-in-out flex-col gap-6 h-[160px]'
       >
-        <img src="/logo_w.png" alt="logo" className="absolute opacity-10 w-[80%] z-10 bg-cover h-full" />
+        <img src="/logo_w.png" alt="logo" className="absolute opacity-10 w-[80%] z-10 bg-cover h-full z-10" />
         <Link href="/">
-          <img src="/logo_w.png" alt="Logo" className="h-22" />
+          <img src="/logo_w.png" alt="Logo" className="relative h-22 z-20" />
         </Link>
         <div className="fixed bottom-4 text-white">
           <button onClick={() => setMenuOpen(!menuOpen)} className="text-3xl md:text-4xl hover:scale-110 p-3 bg-black rounded-full">

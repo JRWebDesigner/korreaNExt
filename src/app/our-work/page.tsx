@@ -29,7 +29,7 @@ export default function Ourwork(){
             </p>
         </div>
       </section>
-      <div className="min-h-screen bg-white px-4 py-12">
+      <div className="min-h-screen bg-white px-4 py-12 mt-16">
       <div className="max-w-6xl mx-auto">
         <div className="grid gap-14 md:grid-cols-2">
           {eventData.map((event, index) => (
