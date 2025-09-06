@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: 'MiFuente';
-  src: url('/fonts/MiFuente.ttf') format('truetype');
+  src: url('/fonts/MiFuente.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -31,7 +31,30 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+h1 {
+  font-family: 'MiFuente', sans-serif;
+}
 
+h2 {
+  font-family: 'MiFuente', sans-serif;
+}
+
+h3 {
+  font-family: 'MiFuente', sans-serif;
+}
+
+h4 {
+  font-family: 'MiFuente', sans-serif;
+}
+
+h5 {
+  font-family: 'MiFuente', sans-serif;
+}
+
+p {
+  font-size: 1.2rem; /* ~16px */
+  line-height: 1.6;
+}
 
 .button-prin{
     border-radius:30px;
