@@ -48,17 +48,17 @@ export default function Home() {
         </h1>
         <br />
         <br />
-        <p className="text-base md:text-2xl mt-4 text-white">
+        <p className="text-base md:text-2xl mt-4 text-gray-300">
           Korrea Studio is a creative workshop based in London, run by artists passionate about design and fabrication. We design and build bold, physical work that leaves a mark. From initial sketches to final pieces, we take your vision and turn it into environments, objects, and experiences that demand attention.
         </p>
-         <p className="text-base md:text-2xl mt-4 text-white">
+         <p className="text-base md:text-2xl mt-4 text-gray-300">
           Whether it’s a set, a prop, a painted backdrop, or a one-off installation — we handle it all, start to finish. With creative direction, design, fabrication, and scenic art, we make your ideas real — and impactful.
         </p>
       </div>
        <motion.div 
                 variants={scaleUp}
               >
-                <div className="bg-white border-gray-800 overflow-hidden hover:border-gray-600 transition-colors group h-full rounded-2xl w-[500px] lg:w-[1100px] mx-auto">
+                <div className="bg-black overflow-hidden hover:border-gray-600 transition-colors group h-full rounded-2xl w-[500px] lg:w-[1100px] mx-auto">
                   <div className="relative h-[500px] overflow-hidden flex flex-col justify-center items-center text-white text-center">
                     <div className="absolute inset-0 bg-black" />
                     <ul className="relative z-20 flex flex-col gap-8 text-3xl md:text-5xl  font-medium tracking-wide">
