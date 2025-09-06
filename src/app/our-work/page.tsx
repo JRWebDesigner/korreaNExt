@@ -17,15 +17,13 @@ const eventData = [
 export default function Ourwork(){
   return(
     <>
-      <section className="relative h-[70dvh] md:h-[80dvh] bg-black flex justify-end items-center">
+      <section className="relative h-[45dvh] bg-black flex justify-center items-start">
 <div className="container mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 text-center">
-              Events may come and go,
-              <br />
-              <span className="">experiences stay</span>
-            </h2>
-            <p className="text-center text-white">
-              We work across the full spectrum of business events, brand experiences and personal occasions. Whether your guest list includes the great and the good, or your nearest and dearest, you can relax knowing each event is meticulously planned and flawlessly delivered. Live, virtual or hybrid, they all share the power to create a lasting impression that lives long in the memory.
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-center">
+              Our Work
+            </h1>
+            <p className="text-center md:text-2xl text-white opacity-70">
+              We create work that balances artistry with precision — from scenic painting and model making to full set design and build. Whether small-scale or monumental, each project is crafted to immerse, inspire, and leave a lasting mark.
             </p>
         </div>
       </section>
