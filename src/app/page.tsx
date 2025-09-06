@@ -51,21 +51,11 @@ export default function Home() {
           Whether it’s a set, a prop, a painted backdrop, or a one-off installation — we handle it all, start to finish. With creative direction, design, fabrication, and scenic art, we make your ideas real — and impactful.
         </p>
       </div>
-    </section>
-	<section className="my-[130px]">
-	   <motion.div 
-            className="container mx-auto flex flex-wrap gap-[130px] justify-center items-center"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-          >
-              <motion.div 
+       <motion.div 
                 variants={scaleUp}
               >
                 <div className="bg-white border-gray-800 overflow-hidden hover:border-gray-600 transition-colors group h-full rounded-2xl w-[500px] lg:w-[1100px] mx-auto">
-                  <div className="relative h-[600px] overflow-hidden flex flex-col justify-center items-center text-white text-center">
-          
+                  <div className="relative h-[500px] overflow-hidden flex flex-col justify-center items-center text-white text-center">
                     <div className="absolute inset-0 bg-black" />
                     <ul className="relative z-20 flex flex-col gap-8 text-3xl md:text-5xl  font-medium tracking-wide">
                     {navLinks.map(({ href, label }) => (
@@ -77,6 +67,16 @@ export default function Home() {
                   </div>
                 </div>
               </motion.div>
+    </section>
+	<section className="my-[130px]">
+	   <motion.div 
+            className="container mx-auto flex flex-wrap gap-[130px] justify-center items-center"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+          >
+             
             {[1, 2].map((i) => (
               <motion.div 
                 key={i}
