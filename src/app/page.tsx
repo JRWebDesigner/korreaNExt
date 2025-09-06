@@ -48,10 +48,10 @@ export default function Home() {
         </h1>
         <br />
         <br />
-        <p className="text-base md:text-2xl mt-4 text-gray-200">
+        <p className="text-base md:text-2xl mt-4 text-gray-300">
           Korrea Studio is a creative workshop based in London, run by artists passionate about design and fabrication. We design and build bold, physical work that leaves a mark. From initial sketches to final pieces, we take your vision and turn it into environments, objects, and experiences that demand attention.
         </p>
-         <p className="text-base md:text-2xl mt-4 text-gray-200">
+         <p className="text-base md:text-2xl mt-4 text-gray-300">
           Whether it’s a set, a prop, a painted backdrop, or a one-off installation — we handle it all, start to finish. With creative direction, design, fabrication, and scenic art, we make your ideas real — and impactful.
         </p>
       </div>
