@@ -17,7 +17,7 @@ export default function Footer(){
      <p className="relative z-20 font-medium opacity-70">London, United Kingdom</p>
       <div className="relative z-20 w-full flex flex-wrap justify-center gap-6   text-xl">
         <Link href="/our-work" className="text-white font-semibold hover:text-green-400">Our work</Link>
-        <Link href="/what-we" className="text-white font-semibold hover:text-green-400">Services</Link>
+        <Link href="/services" className="text-white font-semibold hover:text-green-400">Services</Link>
         <Link href="/about-us" className="text-white font-semibold hover:text-green-400">About us</Link>
         <Link href="/contact" className="text-white font-semibold hover:text-green-400">Contact</Link>
       <div className="flex items-center gap-4 ml-4 text-green-400">
