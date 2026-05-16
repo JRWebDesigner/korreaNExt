@@ -17,7 +17,7 @@ const eventData = [
 export default function Ourwork(){
   return(
     <>
-      <section className="relative h-[40dvh] bg-[url(/fondoB.jpg)] bg-cover flex justify-center items-start">
+      <section className="relative h-[320px] bg-[url(/fondoB.jpg)] bg-cover flex justify-center items-center">
         <div className="container mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-red-600 mb-4 text-center">
               Work
