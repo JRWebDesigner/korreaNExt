@@ -39,36 +39,40 @@ export default function Home() {
 	      <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoPlay loop playsInline muted>
 	      </video>
       </section>
-	  <section className="py-22 px-4 md:px-20 flex flex-col flex-wrap items-center mb-16">
-  {/* Info con fondo blanco */}
-  <div className="info container text-center mx-auto pt-12 bg-white rounded-2xl p-8 md:p-12 mb-12 shadow-lg">
-    <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
-      Set design / Art direction / Fabrication
-    </h1>
-    <br />
-    <br />
-    <p className="text-base md:text-2xl mt-4 text-gray-700">
-      Korrea Studio works across art direction, set design and fabrication for film, editorial and brand worlds. We develop spatial environments from concept to completion, driven by storytelling, atmosphere and contemporary visual language.
-    </p>
+	 <section className="flex flex-col flex-wrap items-center mb-16">
+  {/* Fondo blanco de ancho completo */}
+  <div className="w-full bg-white py-22 px-4 md:px-20">
+    <div className="info container text-center mx-auto">
+      <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
+        Set design / Art direction / Fabrication
+      </h1>
+      <br />
+      <br />
+      <p className="text-base md:text-2xl mt-4 text-gray-700">
+        Korrea Studio works across art direction, set design and fabrication for film, editorial and brand worlds. We develop spatial environments from concept to completion, driven by storytelling, atmosphere and contemporary visual language.
+      </p>
+    </div>
   </div>
   
-  {/* Menú de links con fondo negro */}
-  <motion.div 
-    variants={scaleUp}
-  >
-    <div className="bg-black overflow-hidden hover:border-gray-600 transition-colors group h-full rounded-2xl w-[500px] lg:w-[1100px] mx-auto">
-      <div className="relative h-[500px] overflow-hidden flex flex-col justify-center items-center text-white text-center">
-        <div className="absolute inset-0 bg-black" />
-        <ul className="relative z-20 flex flex-col gap-8 text-3xl md:text-5xl font-medium tracking-wide">
-          {navLinks.map(({ href, label }) => (
-            <li key={href} className="text-red-600 hover:text-white transition-colors">
-              <Link href={href}>{label}</Link>
-            </li>
-          ))}
-        </ul>
+  {/* Menú de links con fondo negro de ancho completo */}
+  <div className="w-full bg-black py-12 px-4 md:px-20">
+    <motion.div 
+      variants={scaleUp}
+    >
+      <div className="overflow-hidden hover:border-gray-600 transition-colors group h-full rounded-2xl w-[500px] lg:w-[1100px] mx-auto">
+        <div className="relative h-[500px] overflow-hidden flex flex-col justify-center items-center text-white text-center">
+          <div className="absolute inset-0 bg-black" />
+          <ul className="relative z-20 flex flex-col gap-8 text-3xl md:text-5xl font-medium tracking-wide">
+            {navLinks.map(({ href, label }) => (
+              <li key={href} className="text-red-600 hover:text-white transition-colors">
+                <Link href={href}>{label}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
-  </motion.div>
+    </motion.div>
+  </div>
 </section>
 	<section className="my-[130px]">
 	   <motion.div 
