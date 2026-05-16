@@ -28,9 +28,9 @@ const scaleUp = {
 };
 export default function Home() {
    const navLinks = [
-    { href: '/our-work', label: 'Our work' },
-    { href: '/services', label: 'Services' },
-    { href: '/about-us', label: 'About us' },
+    { href: '/our-work', label: 'Work' },
+    { href: '/about-us', label: 'Studio' },
+    { href: '/servics', label: 'Services' },
     { href: '/contact', label: 'Contact' },
   ];
   return (
@@ -49,9 +49,6 @@ export default function Home() {
         <br />
         <p className="text-base md:text-2xl mt-4 text-white opacity-70">
           Korrea Studio works across art direction, set design and fabrication for film, editorial and brand worlds. We develop spatial environments from concept to completion, driven by storytelling, atmosphere and contemporary visual language.
-        </p>
-         <p className="text-base md:text-2xl mt-4 text-white opacity-70">
-          Whether it’s a set, a prop, a painted backdrop, or a one-off installation — we handle it all, start to finish. With creative direction, design, fabrication, and scenic art, we make your ideas real — and impactful.
         </p>
       </div>
        <motion.div 
