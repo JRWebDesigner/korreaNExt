@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <div className="relative w-full z-50">
       <header
-        className='relative bg-black text-white px-6 md:px-10 py-8 w-full flex justify-center items-center transition-all duration-500 ease-in-out flex-col gap-6 h-[180px]'
+        className='relative bg-black text-white px-6 md:px-10 py-8 w-full flex justify-center items-center transition-all duration-500 ease-in-out flex-col gap-6 h-[260px]'
       >
         <img src="/logo_w.png" alt="logo" className="absolute opacity-10 w-[80%] z-10 bg-cover h-full z-10" />
         <Link href="/">
@@ -37,7 +37,7 @@ export default function Header() {
           ))}
         </ul>
       </header>
-      <div className="bg-black w-full h-[80px]" />
+      {/* <div className="bg-black w-full h-[80px]" /> */}
       <AnimatePresence>
   {menuOpen && (
     <motion.nav
