@@ -22,7 +22,7 @@ export default function Ourwork(){
             <h1 className="text-4xl md:text-5xl font-bold text-red-600 mb-4 text-center">
               Work
             </h1>
-            <p className="text-base text-white text-center">
+            <p className="text-xl text-white text-center">
               Select Projects
             </p>
         </div>
