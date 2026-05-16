@@ -41,7 +41,7 @@ export default function Home() {
       </section>
 	  <section className="bg-black py-22 px-4 md:px-20 flex flex-col flex-wrap items-center mb-16">
       <div className="container text-center mx-auto pt-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-white">
+        <h1 className="text-3xl md:text-5xl font-bold text-white">
         	Set design / Art direction / Fabrication
           
         </h1>
