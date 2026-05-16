@@ -38,9 +38,9 @@ export default function Services() {
           </h1>
           <br />
           <br />
-          <p className="text-center md:text-2xl text-white opacity-70 max-w-3xl mx-auto">
+          {/* <p className="text-center md:text-2xl text-white opacity-70 max-w-3xl mx-auto">
             At Korrea Studio, we bring visions to life — from first concept to finished build. Every project blends artistry and craftsmanship to create striking, immersive results.
-          </p>
+          </p> */}
         </div>
 
         <div className="w-full max-w-5xl mx-auto px-4">
