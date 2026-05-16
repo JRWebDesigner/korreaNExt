@@ -55,7 +55,7 @@ export default function Home() {
   </div>
   
   {/* Menú de links con fondo negro de ancho completo */}
-  <div className="w-full bg-black py-12 px-4 md:px-20">
+  <div className="w-full bg-[url(/fondoB.jpg)] bg-cover py-12 px-4 md:px-20">
     <motion.div 
       variants={scaleUp}
     >
