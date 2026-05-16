@@ -3,7 +3,7 @@ import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 export default function Footer(){
   return(
-        <footer className="relative z-50 bg-black text-white py-16 px-6 md:px-20 flex flex-col items-center justify-center w-full gap-5">
+        <footer className="relative z-50 bg-[url(/fondoB.jpg)] text-white py-16 px-6 md:px-20 flex flex-col items-center justify-center w-full gap-5">
           <img src="/logo_w.png" alt="logo" className="absolute opacity-10 bottom-6 w-[80%] z-10" />
           <Link href='/'>
             <img src="/logo_w.png" alt="logo" className="h-[50px]" />
