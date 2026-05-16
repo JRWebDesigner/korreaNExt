@@ -35,7 +35,7 @@ export default function Home() {
   ];
   return (
     <>
-      <section className="relative h-[70dvh] md:h-[90dvh] bg-black mt-10">
+      <section className="relative h-[70dvh] md:h-[90dvh] bg-black">
 	      <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoPlay loop playsInline muted>
 	      </video>
       </section>
