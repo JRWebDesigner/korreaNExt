@@ -42,9 +42,8 @@ export default function Home() {
 	  <section className="bg-black py-22 px-4 md:px-20 flex flex-col flex-wrap items-center mb-16">
       <div className="container text-center mx-auto pt-12">
         <h1 className="text-3xl md:text-6xl font-bold text-white">
-          From Concept to Completion 
-          <br/>
-          We Bring Ideas to Life
+        	Set design / Art direction / Fabrication
+          
         </h1>
         <br />
         <br />
