@@ -47,7 +47,7 @@ export default function Services() {
                 className="group border border-transparent hover:border-gray-700 transition-all duration-300 rounded-2xl p-6 md:p-8 bg-black/40 hover:bg-black/60"
               >
                 <div className="block">
-                  <h2 className="text-2xl md:text-3xl font-bold text-white group-hover:text-green-400 transition-colors mb-3">
+                  <h2 className="text-2xl md:text-3xl font-bold text-white group-hover:text-red-400 transition-colors mb-3">
                     {title}
                   </h2>
                   <p className="text-white/60 md:text-lg leading-relaxed">
