@@ -20,7 +20,7 @@ export default function Ourwork(){
       <section className="relative h-[40dvh] bg-black flex justify-center items-start">
 <div className="container mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-center">
-              Our Work
+              Work
             </h1>
             <br />
             <br />
