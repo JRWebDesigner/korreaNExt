@@ -17,16 +17,11 @@ const eventData = [
 export default function Ourwork(){
   return(
     <>
-      <section className="relative h-[40dvh] bg-black flex justify-center items-start">
-<div className="container mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-center">
+      <section className="relative h-[40dvh] bg-[url(/fondoB.jpg)] bg-cover flex justify-center items-start">
+        <div className="container mx-auto">
+            <h1 className="text-4xl md:text-6xl font-bold text-red-600 mb-4 text-center">
               Work
             </h1>
-            <br />
-            <br />
-            <p className="text-center md:text-2xl text-white opacity-70">
-              We create work that balances artistry with precision — from scenic painting and model making to full set design and build. Whether small-scale or monumental, each project is crafted to immerse, inspire, and leave a lasting mark.
-            </p>
         </div>
       </section>
       <div className="min-h-screen bg-white px-4 py-12 mt-16">
