@@ -30,7 +30,7 @@ export default function Home() {
    const navLinks = [
     { href: '/our-work', label: 'Work' },
     { href: '/about-us', label: 'Studio' },
-    { href: '/servics', label: 'Services' },
+    { href: '/services', label: 'Services' },
     { href: '/contact', label: 'Contact' },
   ];
   return (
