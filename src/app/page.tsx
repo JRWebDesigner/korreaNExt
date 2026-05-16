@@ -48,7 +48,7 @@ export default function Home() {
       </h1>
       <br />
       <br />
-      <p className="text-base md:text-2xl mt-4 text-gray-700">
+      <p className="text-base md:text-2xl mt-4 text-gray-900">
         Korrea Studio works across art direction, set design and fabrication for film, editorial and brand worlds. We develop spatial environments from concept to completion, driven by storytelling, atmosphere and contemporary visual language.
       </p>
     </div>
