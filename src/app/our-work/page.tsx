@@ -22,6 +22,9 @@ export default function Ourwork(){
             <h1 className="text-4xl md:text-5xl font-bold text-red-600 mb-4 text-center">
               Work
             </h1>
+            <p className="text-base text-white text-center">
+              Select Projects
+            </p>
         </div>
       </section>
       <div className="min-h-screen bg-white px-4 py-12 mt-16">
