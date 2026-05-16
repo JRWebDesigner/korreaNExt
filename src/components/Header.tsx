@@ -37,6 +37,7 @@ export default function Header() {
           ))}
         </ul>
       </header>
+      <div className="bg-black w-full h-[80px]" />
       <AnimatePresence>
   {menuOpen && (
     <motion.nav
