@@ -22,7 +22,7 @@ export default function Ourwork() {
             Work
           </h1>
           <p className="text-xl text-white text-center mt-0">   {/* ← mt-0 quita margen arriba */}
-            Select Projects
+            Selected Projects
           </p>
         </div>
       </section>
