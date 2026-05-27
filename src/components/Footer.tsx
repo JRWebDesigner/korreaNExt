@@ -12,14 +12,15 @@ export default function Footer(){
            
             <p className="font-medium">info@korreastudio.co.uk</p>
             
-          <Link href="https://www.instagram.com/korreastudio?igsh=MW1kOTQza25vMW9ocw=="><FaInstagram size={20} /></Link>
+          
          </div>
+          <Link href="https://www.instagram.com/korreastudio?igsh=MW1kOTQza25vMW9ocw=="><FaInstagram size={20} /></Link>
      <p className="relative z-20 font-medium opacity-70">London, United Kingdom</p>
       <div className="relative z-20 w-full flex flex-wrap justify-center gap-6   text-xl">
-        <Link href="/our-work" className="text-white font-semibold hover:text-green-400">Work</Link>
-        <Link href="/about-us" className="text-white font-semibold hover:text-green-400">Studio</Link>
-        <Link href="/services" className="text-white font-semibold hover:text-green-400">Services</Link>
-        <Link href="/contact" className="text-white font-semibold hover:text-green-400">Contact</Link>
+        <Link href="/our-work" className="text-white font-semibold hover:text-red-600">Work</Link>
+        <Link href="/about-us" className="text-white font-semibold hover:text-red-600">Studio</Link>
+        <Link href="/services" className="text-white font-semibold hover:text-red-600">Services</Link>
+        <Link href="/contact" className="text-white font-semibold hover:text-red-600">Contact</Link>
       <div className="flex items-center gap-4 ml-4 text-green-400">
       </div>
       </div>
