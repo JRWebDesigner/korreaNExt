@@ -22,7 +22,7 @@ export default function Header() {
       >
         <img src="/logo_w.png" alt="logo" className="absolute opacity-10 w-[80%] z-10 bg-cover h-full z-10" />
         <Link href="/">
-          <img src="/logo_w.png" alt="Logo" className="relative h-22 z-20" />
+          <img src="/logo_w.png" alt="Logo" className="relative bg-cover h-20 z-20" />
         </Link>
         <div className="fixed bottom-4 text-white">
           <button onClick={() => setMenuOpen(!menuOpen)} className="text-3xl md:text-4xl hover:scale-110 p-3 bg-black rounded-full">
