@@ -16,7 +16,7 @@ export default function Footer(){
          </div>
           <Link href="https://www.instagram.com/korreastudio?igsh=MW1kOTQza25vMW9ocw=="><FaInstagram size={20} /></Link>
      <p className="relative z-20 font-medium opacity-70">London, United Kingdom</p>
-      <div className="relative z-20 w-full flex flex-wrap justify-center gap-6   text-xl">
+      <div className="relative z-20 w-full flex flex-wrap justify-center gap-6 mt-10 text-xl">
         <Link href="/our-work" className="text-white font-semibold hover:text-red-600">Work</Link>
         <Link href="/about-us" className="text-white font-semibold hover:text-red-600">Studio</Link>
         <Link href="/services" className="text-white font-semibold hover:text-red-600">Services</Link>
