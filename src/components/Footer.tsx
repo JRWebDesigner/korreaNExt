@@ -9,7 +9,7 @@ export default function Footer(){
             <img src="/logo_w.png" alt="logo" className="h-[50px]" />
           </Link>
           <div className="relative z-20 text-lg flex items-center justify-center gap-7 w-full text-white opacity-70">
-            <p className="font-medium">+44 7939 697888</p>
+           
             <p className="font-medium">info@korreastudio.co.uk</p>
             
           <Link href="https://www.instagram.com/korreastudio?igsh=MW1kOTQza25vMW9ocw=="><FaInstagram size={20} /></Link>
