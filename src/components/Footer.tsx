@@ -33,16 +33,16 @@ export default function Footer() {
 
       {/* Enlaces de navegación */}
       <div className="relative z-20 w-full flex flex-wrap justify-center gap-6 mt-10 text-xl">
-        <Link href="/our-work" className="text-white font-semibold hover:text-red-600">
+        <Link href="/our-work" className="text-red-600 font-semibold hover:text-white">
           Work
         </Link>
-        <Link href="/about-us" className="text-white font-semibold hover:text-red-600">
+        <Link href="/about-us" className="text-red-600 font-semibold hover:text-white">
           Studio
         </Link>
-        <Link href="/services" className="text-white font-semibold hover:text-red-600">
+        <Link href="/services" className="text-red-600 font-semibold hover:text-white">
           Services
         </Link>
-        <Link href="/contact" className="text-white font-semibold hover:text-red-600">
+        <Link href="/contact" className="text-red-600 font-semibold hover:text-white">
           Contact
         </Link>
       </div>
