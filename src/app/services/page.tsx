@@ -28,14 +28,15 @@ export default function Services() {
     <>
       <section className="relative min-h-screen bg-black flex justify-center items-center flex-col gap-10 py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-center">
-            Services
+          <h1 className="text-4xl md:text-5xl font-bold text-red-600 mb-4 text-center">
+              Services
           </h1>
           <br />
           <br />
           {/* <p className="text-center md:text-2xl text-white opacity-70 max-w-3xl mx-auto">
             At Korrea Studio, we bring visions to life — from first concept to finished build. Every project blends artistry and craftsmanship to create striking, immersive results.
           </p> */}
+          
         </div>
 
         <div className="w-full max-w-5xl mx-auto px-4">
