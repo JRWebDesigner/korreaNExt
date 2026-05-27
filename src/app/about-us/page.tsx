@@ -7,7 +7,7 @@ export default function Aboutus() {
               Studio
             </h1>
             <p className="text-xl text-white text-center">
-              We are Korrea Studio, a London-based workshop of artists and makers. Our craft transforms ideas into bold, tangible worlds with detail, imagination, and precision.
+              Korreastudio is a creative studio specializing in set design and spatial building for visual storytelling. We create intentional environments that shape mood, narrative, and image.
             </p>
         </div>
       </section>
