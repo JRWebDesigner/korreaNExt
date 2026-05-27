@@ -4,7 +4,7 @@ export default function Aboutus() {
       <section className="relative h-[180px] bg-[url(/fondoB.jpg)] bg-cover flex justify-center items-start">
         <div className="container mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-red-600 mb-4 text-center">
-              About Us
+              Studio
             </h1>
             <p className="text-xl text-white text-center">
               We are Korrea Studio, a London-based workshop of artists and makers. Our craft transforms ideas into bold, tangible worlds with detail, imagination, and precision.
