@@ -63,11 +63,6 @@ export default function Contact() {
             </motion.select>
             <motion.textarea variants={fadeInUp} placeholder="How can we help?" rows={4} className="w-full bg-gray-800 p-3 rounded text-white" />
 
-            <motion.div variants={fadeInUp} className="flex items-center gap-2">
-              <input type="checkbox" id="newsletter" className="accent-green-500" />
-              <label htmlFor="newsletter">Sign up to our newsletter</label>
-            </motion.div>
-
             <motion.button
               variants={fadeInUp}
               type="submit"
