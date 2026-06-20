@@ -24,9 +24,9 @@ export default function Footer() {
       </div>
 
       {/* Instagram */}
-      <Link href="https://www.instagram.com/korreastudio?igsh=MW1kOTQza25vMW9ocw==">
+      <a href="https://www.instagram.com/korreastudio?utm_source=qr" target="_blank" className="z-20 cursor-pointer">
         <FaInstagram size={20} />
-      </Link>
+      </a>
 
       {/* Ubicación */}
       <p className="relative z-20 font-medium opacity-70">London, United Kingdom</p>
