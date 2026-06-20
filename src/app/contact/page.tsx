@@ -41,7 +41,7 @@ export default function Contact() {
       >
 
         <motion.section variants={fadeInUp} className="max-w-6xl mx-auto">
-          <h2 className="text-3xl text-green-400 font-semibold mb-4">Get in touch</h2>
+          <h2 className="text-3xl text-red-500 font-semibold mb-4">Get in touch</h2>
           <p className="mb-6">Drop us a message and we will get back to you shortly.</p>
 
           <motion.form variants={container} className="space-y-6">
@@ -56,22 +56,12 @@ export default function Contact() {
             </div>
             <motion.input variants={fadeInUp} type="text" placeholder="Company name" className="w-full bg-gray-800 p-3 rounded text-white" />
             <motion.select variants={fadeInUp} className="w-full bg-gray-800 p-3 rounded text-white">
-              <option>Where did you hear about us?</option>
+              <option>How can we help?</option>
               <option>Google</option>
               <option>Social Media</option>
               <option>Friend or Colleague</option>
             </motion.select>
             <motion.textarea variants={fadeInUp} placeholder="How can we help?" rows={4} className="w-full bg-gray-800 p-3 rounded text-white" />
-
-            <motion.button
-              variants={fadeInUp}
-              type="submit"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-green-400 hover:bg-green-500 text-black font-bold px-6 py-3 rounded hidden"
-            >
-              SEND THE MESSAGE
-            </motion.button>
           </motion.form>
         </motion.section>
       </motion.div>
