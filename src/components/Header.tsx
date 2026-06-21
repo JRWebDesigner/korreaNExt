@@ -16,55 +16,76 @@ export default function Header() {
   ];
 
   return (
-    <div className="relative w-full z-50">
-      <header
-        className='relative bg-[url(/fondoB.jpg)] text-white px-6 md:px-10 py-8 w-full flex justify-center items-center transition-all duration-500 ease-in-out flex-col gap-6 h-[150px] md:h-[260px]'
-      >
-        <img src="/logo_w.png" alt="logo" className="absolute opacity-10 w-[80%] z-10 bg-cover h-full z-10" />
-        <Link href="/">
-          <img src="/logo_w.png" alt="Logo" className="relative object-contain md:object-cover h-20 z-20" />
+    <header className="relative w-full z-50 bg-[url(/fondoB.jpg)] bg-cover bg-center text-white">
+      {/* Contenedor interno con padding y altura responsiva */}
+      <div className="relative flex items-center justify-between px-4 sm:px-6 md:px-10 py-4 md:py-8 min-h-[80px] md:min-h-[140px]">
+        
+        {/* Logo centrado en móvil, a la izquierda en desktop (opcional) */}
+        <Link href="/" className="z-20 mx-auto md:mx-0">
+          <img
+            src="/logo_w.png"
+            alt="Korrea Studio"
+            className="h-12 sm:h-14 md:h-20 w-auto object-contain"
+          />
         </Link>
-        <div className="fixed bottom-4 text-white">
-          <button onClick={() => setMenuOpen(!menuOpen)} className="text-3xl md:text-4xl hover:scale-110 p-3 bg-black rounded-full">
-            {menuOpen ? <FiX /> : <FiMenu />}
-          </button>
-        </div>
-        <ul className="hidden gap-8 text-2xl font-medium tracking-wide">
+
+        {/* Menú de escritorio (visible a partir de md) */}
+        <ul className="hidden md:flex gap-6 lg:gap-8 text-lg lg:text-2xl font-medium tracking-wide z-20">
           {navLinks.map(({ href, label }) => (
-            <li key={href} className="hover:text-green-400 transition-colors">
-              <Link href={href}>{label}</Link>
+            <li key={href}>
+              <Link
+                href={href}
+                className="hover:text-green-400 transition-colors duration-200"
+              >
+                {label}
+              </Link>
             </li>
           ))}
         </ul>
-      </header>
-      {/* <div className="bg-black w-full h-[80px]" /> */}
-      <AnimatePresence>
-  {menuOpen && (
-    <motion.nav
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="fixed inset-0 bg-black flex flex-col items-center justify-center space-y-10 text-3xl text-white z-50"
-    >
-      <button
-        onClick={() => setMenuOpen(false)}
-        className="absolute bottom-0 text-4xl text-white hover:scale-110"
-      >
-        <FiX />
-      </button>
-      {navLinks.map(({ href, label }) => (
-        <Link
-          key={href}
-          href={href}
-          onClick={() => setMenuOpen(false)}
-          className="hover:text-green-400 transition-colors"
+
+        {/* Botón hamburguesa (solo visible en móvil) */}
+        <button
+          onClick={() => setMenuOpen(true)}
+          className="md:hidden z-20 text-3xl sm:text-4xl p-2 rounded-full bg-black/50 hover:bg-black/70 transition-all"
+          aria-label="Abrir menú"
         >
-          {label}
-        </Link>
-      ))}
-    </motion.nav>
-  )}
-</AnimatePresence>
-    </div>
+          <FiMenu />
+        </button>
+      </div>
+
+      {/* Overlay del menú móvil */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.nav
+            initial={{ opacity: 0, x: '100%' }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: '100%' }}
+            transition={{ type: 'tween', duration: 0.3 }}
+            className="fixed inset-0 bg-black/95 backdrop-blur-sm flex flex-col items-center justify-center space-y-8 text-2xl sm:text-3xl text-white z-50"
+          >
+            {/* Botón cerrar */}
+            <button
+              onClick={() => setMenuOpen(false)}
+              className="absolute top-6 right-6 text-4xl sm:text-5xl hover:scale-110 transition-transform"
+              aria-label="Cerrar menú"
+            >
+              <FiX />
+            </button>
+
+            {/* Enlaces */}
+            {navLinks.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-green-400 transition-colors duration-200 border-b border-transparent hover:border-green-400 pb-1"
+              >
+                {label}
+              </Link>
+            ))}
+          </motion.nav>
+        )}
+      </AnimatePresence>
+    </header>
   );
 }
