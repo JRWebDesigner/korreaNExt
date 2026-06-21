@@ -76,7 +76,7 @@ export default function Home() {
 
       <section className="my-16 md:my-[130px]">
         <motion.div 
-          className="container mx-auto flex flex-wrap gap-6 md:gap-[130px] justify-center items-center"
+          className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6  justify-center items-center px-10"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
