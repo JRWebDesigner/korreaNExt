@@ -9,9 +9,9 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: '/our-work', label: 'Our work' },
+    { href: '/work', label: 'Work' },
+    { href: '/studio', label: 'Studio' },
     { href: '/services', label: 'Services' },
-    { href: '/about-us', label: 'About us' },
     { href: '/contact', label: 'Contact' },
   ];
 
@@ -31,7 +31,7 @@ export default function Header() {
         </div>
         <ul className="hidden gap-8 text-2xl font-medium tracking-wide">
           {navLinks.map(({ href, label }) => (
-            <li key={href} className="hover:text-green-400 transition-colors">
+            <li key={href} className="hover:text-red-500 transition-colors">
               <Link href={href}>{label}</Link>
             </li>
           ))}
@@ -44,7 +44,7 @@ export default function Header() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 bg-black flex flex-col items-center justify-center space-y-10 text-3xl text-white z-50"
+      className="fixed inset-0 bg-black flex flex-col items-center justify-center space-y-10 text-3xl text-white z-90"
     >
       <button
         onClick={() => setMenuOpen(false)}
@@ -57,7 +57,7 @@ export default function Header() {
           key={href}
           href={href}
           onClick={() => setMenuOpen(false)}
-          className="hover:text-green-400 transition-colors"
+          className="hover:text-red-500 transition-colors"
         >
           {label}
         </Link>

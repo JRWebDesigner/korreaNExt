@@ -27,8 +27,8 @@ const scaleUp = {
 
 export default function Home() {
   const navLinks = [
-    { href: '/our-work', label: 'Work' },
-    { href: '/about-us', label: 'Studio' },
+    { href: '/work', label: 'Work' },
+    { href: '/studio', label: 'Studio' },
     { href: '/services', label: 'Services' },
     { href: '/contact', label: 'Contact' },
   ];
@@ -59,7 +59,7 @@ export default function Home() {
         <div className="w-full bg-[url(/fondoB.jpg)] bg-contain md:bg-cover bg-repeat py-10 px-4 md:px-20">
           <motion.div variants={scaleUp}>
             <div className="overflow-hidden   group h-full rounded-2xl w-full max-w-[500px] lg:max-w-[1100px] mx-auto">
-              <div className="relative h-[80px] md:h-64 lg:h-[320px] overflow-hidden flex flex-col justify-center items-center text-white text-center">
+              <div className="relative h-[95px] md:h-64 lg:h-[320px] overflow-hidden flex flex-col justify-center items-center text-white text-center">
                 <ul className="relative z-20 flex flex-row flex-wrap justify-center gap-4 md:gap-8 text-2xl md:text-4xl lg:text-5xl font-medium tracking-wide">
                   {navLinks.map(({ href, label }) => (
                     <li key={href} className="text-red-600 hover:text-white transition-colors">

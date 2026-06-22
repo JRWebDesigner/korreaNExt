@@ -34,10 +34,10 @@ export default function Footer() {
       </p>
 
       <div className="relative z-20 w-full flex flex-wrap justify-center gap-4 sm:gap-5 md:gap-6 mt-6 sm:mt-8 md:mt-10 text-base sm:text-lg md:text-xl">
-        <Link href="/our-work" className="text-red-600 font-semibold hover:text-white transition-colors duration-200">
+        <Link href="/work" className="text-red-600 font-semibold hover:text-white transition-colors duration-200">
           Work
         </Link>
-        <Link href="/about-us" className="text-red-600 font-semibold hover:text-white transition-colors duration-200">
+        <Link href="/studio" className="text-red-600 font-semibold hover:text-white transition-colors duration-200">
           Studio
         </Link>
         <Link href="/services" className="text-red-600 font-semibold hover:text-white transition-colors duration-200">

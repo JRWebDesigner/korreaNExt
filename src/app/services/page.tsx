@@ -25,21 +25,15 @@ const services = [
 
 export default function Services() {
   return (
-    <>
-      <section className="relative min-h-screen bg-black flex justify-center items-center flex-col gap-10 py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-red-600 mb-4 text-center">
-              Services
+    <div className="bg-[url(/fondoB.jpg)] bg-cover">
+      <section className="relative h-[90px] bg-[url(/fondoB.jpg)] bg-cover flex justify-center items-start">
+        <div className="container mx-auto pt-0">   {/* ← pt-0 elimina padding superior */}
+          <h1 className="text-4xl md:text-5xl font-bold text-red-600 mb-4 text-center mt-0 pt-0">
+            Services
           </h1>
-          <br />
-          <br />
-          {/* <p className="text-center md:text-2xl text-white opacity-70 max-w-3xl mx-auto">
-            At Korrea Studio, we bring visions to life — from first concept to finished build. Every project blends artistry and craftsmanship to create striking, immersive results.
-          </p> */}
-          
         </div>
-
-        <div className="w-full max-w-5xl mx-auto px-4">
+      </section>
+      <section className="w-full max-w-5xl mx-auto px-4 bg-[url(/fondoB.jpg)] bg-cover">
           <div className="flex flex-col gap-8">
             {services.map(({ title, description, index }) => (
               <div 
@@ -57,8 +51,7 @@ export default function Services() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-    </>
+        </section>
+    </div>
   )
 }
