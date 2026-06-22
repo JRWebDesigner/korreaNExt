@@ -42,13 +42,13 @@ export default function Home() {
 
       <section className="flex flex-col flex-wrap items-center mb-16">
         {/* Fondo blanco */}
-        <div className="w-full bg-white py-16 md:py-24 px-4 md:px-20">
+        <div className="w-full bg-white py-10 md:py-24 px-4 md:px-20">
           <div className="info container text-center mx-auto">
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
+            <h1 className="text-2xl md:text-5xl font-bold text-gray-900">
               Set design / Art direction / Fabrication
             </h1>
-            <br />
-            <br />
+            <br className="hidden md:block"/>
+            <br className="hidden md:block"/>
             <p className="text-base md:text-2xl mt-4 text-gray-900">
               Korrea Studio works across art direction, set design and fabrication for film, editorial and brand worlds. We develop spatial environments from concept to completion, driven by storytelling, atmosphere and contemporary visual language.
             </p>
@@ -56,11 +56,10 @@ export default function Home() {
         </div>
 
         {/* Menú con fondo negro */}
-        <div className="w-full bg-[url(/fondoB.jpg)] bg-cover py-12 px-4 md:px-20">
+        <div className="w-full bg-[url(/fondoB.jpg)] bg-contain md:bg-cover bg-repeat py-10 px-4 md:px-20">
           <motion.div variants={scaleUp}>
-            <div className="overflow-hidden hover:border-gray-600 transition-colors group h-full rounded-2xl w-full max-w-[500px] lg:max-w-[1100px] mx-auto">
-              <div className="relative h-48 md:h-64 lg:h-[320px] overflow-hidden flex flex-col justify-center items-center text-white text-center">
-                <div className="absolute inset-0" />
+            <div className="overflow-hidden   group h-full rounded-2xl w-full max-w-[500px] lg:max-w-[1100px] mx-auto">
+              <div className="relative h-[80px] md:h-64 lg:h-[320px] overflow-hidden flex flex-col justify-center items-center text-white text-center">
                 <ul className="relative z-20 flex flex-row flex-wrap justify-center gap-4 md:gap-8 text-2xl md:text-4xl lg:text-5xl font-medium tracking-wide">
                   {navLinks.map(({ href, label }) => (
                     <li key={href} className="text-red-600 hover:text-white transition-colors">
@@ -76,7 +75,7 @@ export default function Home() {
 
       <section className="my-16 md:my-[130px]">
         <motion.div 
-          className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6  justify-center items-center px-10"
+          className="container mx-auto flex flex-wrap  gap-10 justify-center items-center px-10"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -84,8 +83,8 @@ export default function Home() {
         >
           {[1, 2].map((i) => (
             <motion.div key={i} variants={scaleUp}>
-              <div className="bg-gray-600 border-gray-800 overflow-hidden hover:border-gray-600 transition-colors group h-full rounded-2xl w-full max-w-[500px] lg:max-w-[1100px] mx-auto">
-                <div className="relative h-64 md:h-[500px] lg:h-[600px] overflow-hidden">
+              <div className="bg-gray-600 border-gray-800 overflow-hidden hover:border-gray-600 transition-colors group rounded-2xl w-[270px] md:w-[350px] h-[270px] md:h-[350px]">
+                <div className="relative overflow-hidden w-full h-full">
                   <img
                     src={`/`}
                     alt={`Project ${i}`}
