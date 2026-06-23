@@ -20,7 +20,7 @@ export default function Header() {
       <header
         className='relative bg-[url(/fondoB.jpg)] text-white px-6 md:px-10 py-8 w-full flex justify-center items-center transition-all duration-500 ease-in-out flex-col gap-6 h-[100px] md:h-[150px]'
       >
-        <img src="/logo_w.png" alt="logo" className="absolute opacity-10 w-[100%] md:w-[80%] z-10 bg-cover h-full md:h-[70%] z-10" />
+        <img src="/logo_w.png" alt="logo" className="absolute opacity-10 w-[100%] md:w-[80%] z-10 bg-cover h-[55px] md:h-[70%] z-10 max-h-[78px]"/>
         <Link href="/">
           <img src="/logo_w.png" alt="Logo" className="relative object-contain md:object-cover h-[50px] z-20" />
         </Link>

@@ -9,7 +9,7 @@ export default function Footer() {
       <img
         src="/logo_w.png"
         alt="logo background"
-        className="absolute z-10 opacity-10 w-full h-full object-contain z-10 pointer-events-none select-none"
+        className="absolute z-10 opacity-10 w-[80%] h-full object-contain z-10 pointer-events-none select-none"
       />
 
       <Link href="/" className="z-20">
