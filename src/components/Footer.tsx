@@ -13,7 +13,7 @@ export default function Footer() {
       />
 
       <Link href="/" className="z-20">
-        <img src="/logo_w.png" alt="logo" className="h-7 sm:h-12 md:h-14 lg:h-[50px]" />
+        <img src="/logo_w.png" alt="logo" className="h-6 sm:h-12 md:h-14 lg:h-[50px]" />
       </Link>
 
       <div className="relative z-20 text-sm sm:text-base md:text-lg flex items-center justify-center w-full text-white opacity-70">
