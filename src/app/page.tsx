@@ -41,7 +41,7 @@ export default function Home() {
       </section>
 
       <section className="flex flex-col items-center mb-16">
-        <div className="w-full bg-[url(/fondoB.jpg)] bg-cover bg-center py-14 md:py-20 px-6 md:px-20">
+        <div className="w-full bg-black py-14 md:py-20 px-6 md:px-20">
           <div className="max-w-3xl mx-auto text-center">
             <p className="italic text-base md:text-2xl leading-relaxed text-gray-200">
               Korrea Studio works across art direction, set design and fabrication
