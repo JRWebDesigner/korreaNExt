@@ -73,7 +73,7 @@ export default function Home() {
           <div className="col-span-10 h-[35.5dvh] bg-[#efece4] bg-[url('/texture-paper.jpg')] bg-cover bg-center" />
       
           {/* Fila 2: negro + textura (cols 3-12) */}
-          <div className="col-span-8 h-[35.5dvh] bg-black" />
+          <div className="col-span-8 h-[35.5dvh] bg-[#dedad2]" />
           <div className="col-span-2 h-[35.5dvh] bg-[#dedad2] bg-[url('/texture-paper.jpg')] bg-cover bg-center" />
         </div>
       </section>
