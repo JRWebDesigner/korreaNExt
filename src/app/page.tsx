@@ -68,12 +68,12 @@ export default function Home() {
       <section className="w-full max-w-[1400px] mx-auto">
         <div className="grid grid-cols-12">
           {/* Franja superior gris claro */}
-          <div className="col-span-12 bg-white h-24 md:h-32" />
+          <div className="col-span-12 bg-white h-24 md:h-[400px]" />
       
           {/* Fila 2: naranja / negro / imagen con textura */}
-          <div className="col-span-2 bg-orange-600 h-32 md:h-40" />
-          <div className="col-span-8 bg-black h-32 md:h-40" />
-          <div className="col-span-2 bg-[url(/texture.jpg)] bg-cover bg-center h-32 md:h-40" />
+          <div className="col-span-2 bg-orange-600 h-32 md:h-[400px]" />
+          <div className="col-span-8 bg-black h-32 md:h-[400px]" />
+          <div className="col-span-2 bg-gray-300 bg-cover bg-center h-32 md:h-[400px]" />
       
           {/* Franja negra intermedia */}
           <div className="col-span-12 bg-black h-28 md:h-36" />
