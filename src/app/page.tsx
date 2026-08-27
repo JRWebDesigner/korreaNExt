@@ -66,7 +66,7 @@ export default function Home() {
       <section className="w-full">
         <div className="grid grid-cols-12">
           {/* Franja superior gris claro */}
-          <div className="col-span-12 bg-gray-200 h-24 md:h-32" />
+          <div className="col-span-12 bg-white h-24 md:h-32" />
       
           {/* Fila 2: naranja / negro / imagen con textura */}
           <div className="col-span-2 bg-orange-600 h-32 md:h-40" />
@@ -77,8 +77,8 @@ export default function Home() {
           <div className="col-span-12 bg-black h-28 md:h-36" />
       
           {/* Fila 4: gris claro / imagen / naranja */}
-          <div className="col-span-6 bg-gray-200 h-32 md:h-40" />
-          <div className="col-span-4 bg-[url(/building.jpg)] bg-cover bg-center h-32 md:h-40" />
+          <div className="col-span-6 bg-white h-32 md:h-40" />
+          <div className="col-span-4 bg-gray-200 bg-cover bg-center h-32 md:h-40" />
           <div className="col-span-2 bg-orange-600 h-32 md:h-40" />
         </div>
       </section>
