@@ -1,5 +1,10 @@
 "use client"
-
+type Service = {
+  title: string;
+  description: string;
+  index: string;
+  variant: ServiceVariant;
+};
 const services = [
   {
     title: "Art Direction & Set Design",
