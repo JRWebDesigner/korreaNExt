@@ -68,20 +68,20 @@ export default function Home() {
       <section className="w-full max-w-[1600px] mx-auto">
         <div className="grid grid-cols-12">
           {/* Franja superior gris claro */}
-          <div className="col-span-12 bg-white h-24 md:h-[400px]" />
+          <div className="col-span-12 bg-white h-[35dvh] md:h-[35.5dvh]" />
       
           {/* Fila 2: naranja / negro / imagen con textura */}
-          <div className="col-span-2 bg-orange-600 h-32 md:h-[400px]" />
-          <div className="col-span-8 bg-black h-32 md:h-[400px]" />
-          <div className="col-span-2 bg-gray-300 bg-cover bg-center h-32 md:h-[400px]" />
+          <div className="col-span-2 bg-orange-600 h-[35dvh] md:h-[35.5dvh]" />
+          <div className="col-span-8 bg-black h-[35dvh] md:h-[35.5dvh]" />
+          <div className="col-span-2 bg-gray-300 bg-cover bg-center h-[35dvh] md:h-[35.5dvh]" />
       
           {/* Franja negra intermedia */}
           <div className="col-span-12 bg-black h-28 md:h-36" />
       
           {/* Fila 4: gris claro / imagen / naranja */}
-          <div className="col-span-6 bg-white h-32 md:h-40" />
-          <div className="col-span-4 bg-gray-200 bg-cover bg-center h-32 md:h-40" />
-          <div className="col-span-2 bg-orange-600 h-32 md:h-40" />
+          <div className="col-span-6 bg-white h-[35dvh] md:h-[35.5dvh]" />
+          <div className="col-span-4 bg-gray-200 bg-cover bg-center h-[35dvh] md:h-[35.5dvh]" />
+          <div className="col-span-2 bg-orange-600 h-[35dvh] md:h-[35.5dvh]" />
         </div>
       </section>
     </>
