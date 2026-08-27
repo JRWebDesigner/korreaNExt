@@ -63,7 +63,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full">
+      <section className="w-full max-w-2xl">
         <div className="grid grid-cols-12">
           {/* Franja superior gris claro */}
           <div className="col-span-12 bg-white h-24 md:h-32" />
