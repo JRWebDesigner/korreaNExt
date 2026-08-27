@@ -42,9 +42,9 @@ export default function Home() {
          <div className="bg-gray-200 h-full" /> 
       </section>
 
-      <section className="flex flex-col items-center mb-16 max-w-[1600px] mx-auto">
+      <section className="flex flex-col justify-center items-center mb-16 max-w-[1600px] mx-auto">
         <div className="w-full bg-black py-14 md:py-32 px-6 md:px-20">
-          <div className="max-w-5xl mx-auto text-center">
+          <div className="max-w-6xl mx-auto text-center">
             <p className="italic text-base md:text-4xl leading-relaxed text-gray-200">
               Korrea Studio works across art direction, set design and fabrication
               for film, editorial and brand worlds. We develop spatial environments
@@ -53,7 +53,7 @@ export default function Home() {
             </p>
       
             <motion.div variants={scaleUp}>
-              <ul className="flex flex-row flex-wrap justify-center gap-6 md:gap-10 text-xl md:text-3xl font-bold uppercase tracking-wide text-white mt-10 md:mt-16">
+              <ul className="flex flex-row flex-wrap justify-center gap-6 md:gap-16 text-xl md:text-3xl font-bold uppercase tracking-wide text-white mt-10 md:mt-16">
                 {navLinks.map(({ href, label }) => (
                   <li key={href} className="hover:text-red-500 transition-colors">
                     <Link href={href}>{label}</Link>
