@@ -1,6 +1,6 @@
 "use client"
 type ServiceVariant = "light-dots" | "gray-orange" | "dark-orange";
-
+//rossy te amo
 type Service = {
   title: string;
   description: string;
