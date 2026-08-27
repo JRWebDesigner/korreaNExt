@@ -2,15 +2,15 @@
 import Link from 'next/link'
 import { motion } from "framer-motion"
 
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2
-    }
-  }
-};
+// const staggerContainer = {
+//   hidden: { opacity: 0 },
+//   visible: {
+//     opacity: 1,
+//     transition: {
+//       staggerChildren: 0.2
+//     }
+//   }
+// };
 
 const scaleUp = {
   hidden: { scale: 0.9, opacity: 0 },
