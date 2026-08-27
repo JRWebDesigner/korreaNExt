@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="relative z-50 bg-black bg-contain bg-top text-white py-8 md:py-32 px-4 sm:px-6 md:px-12 lg:px-20 flex flex-col items-center justify-center w-full gap-4 md:gap-5 overflow-hidden min-h-[240px]">
 
       <Link href="/" className="z-20">
-        <img src="/logo_w.png" alt="logo" className="h-6 sm:h-12 md:h-14 lg:h-[50px]" />
+        <img src="/logo_w.png" alt="logo" className="h-6 sm:h-12 md:h-14 lg:h-[40px]" />
       </Link>
 
       <div className="relative z-20 text-sm sm:text-base md:text-lg flex items-center justify-center w-full text-white opacity-70">
@@ -28,17 +28,17 @@ export default function Footer() {
       </p>
 
       <div className="relative z-20 w-full flex flex-wrap justify-center gap-4 sm:gap-5 md:gap-6 mt-6 sm:mt-8 md:mt-10 text-base sm:text-lg md:text-xl">
-        <Link href="/work" className="text-red-600 font-semibold hover:text-white transition-colors duration-200">
-          Work
+        <Link href="/work" className="text-white hover:text-orange-400 font-semibold hover:text-white transition-colors duration-200">
+          WORK
         </Link>
         <Link href="/studio" className="text-red-600 font-semibold hover:text-white transition-colors duration-200">
-          Studio
+          STUDIO
         </Link>
-        <Link href="/services" className="text-red-600 font-semibold hover:text-white transition-colors duration-200">
-          Services
+        <Link href="/services" className="text-white hover:text-orange-400 font-semibold hover:text-white transition-colors duration-200">
+          SERVICES
         </Link>
-        <Link href="/contact" className="text-red-600 font-semibold hover:text-white transition-colors duration-200">
-          Contact
+        <Link href="/contact" className="text-white hover:text-orange-400 font-semibold hover:text-white transition-colors duration-200">
+          CONTACT
         </Link>
       </div>
     </footer>
