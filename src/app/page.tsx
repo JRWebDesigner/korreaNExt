@@ -64,27 +64,27 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full max-w-[1600px] mx-auto">
+      <section className="w-full max-w-[1800px] mx-auto">
         <div className="grid grid-cols-12 grid-rows-2">
           {/* Naranja: ocupa TODO el alto, ambas franjas */}
-          <div className="col-span-2 row-span-2 bg-orange-600 h-[71dvh]" />
+          <div className="col-span-2 row-span-2 bg-orange-600 h-[56dvh]" />
       
           {/* Franja superior con textura (cols 3-12) */}
-          <div className="col-span-10 h-[35.5dvh] bg-[#efece4] bg-[url('/texture-paper.jpg')] bg-cover bg-center" />
+          <div className="col-span-10 h-[28dvh] bg-[#efece4] bg-[url('/texture-paper.jpg')] bg-cover bg-center" />
       
           {/* Fila 2: negro + textura (cols 3-12) */}
-          <div className="col-span-8 h-[35.5dvh] bg-[#dedad2]" />
-          <div className="col-span-2 h-[35.5dvh] bg-[#dedad2] bg-[url('/texture-paper.jpg')] bg-cover bg-center" />
+          <div className="col-span-8 h-[28dvh] bg-[#dedad2]" />
+          <div className="col-span-2 h-[28dvh] bg-[#dedad2] bg-[url('/texture-paper.jpg')] bg-cover bg-center" />
         </div>
       </section>
-      <section className="w-full max-w-[1600px] mx-auto">
+      <section className="w-full max-w-[1800px] mx-auto">
         <div className="grid grid-cols-12">
           <div className="col-span-12 bg-black h-28 md:h-36" />
       
           {/* Fila 4: gris claro / imagen / naranja */}
-          <div className="col-span-6 bg-white h-[35dvh] md:h-[35.5dvh]" />
-          <div className="col-span-4 bg-gray-200 bg-cover bg-center h-[35dvh] md:h-[35.5dvh]" />
-          <div className="col-span-2 bg-orange-600 h-[35dvh] md:h-[35.5dvh]" />
+          <div className="col-span-6 bg-white h-[35dvh] md:h-[28dvh]" />
+          <div className="col-span-6 bg-gray-200 bg-cover bg-center h-[35dvh] md:h-[28dvh]" />
+          <div className="col-span-2 bg-orange-600 h-[35dvh] md:h-[28dvh]" />
         </div>
       </section>
     </>
