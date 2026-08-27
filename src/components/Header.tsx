@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <div className="relative w-full z-50">
-      <header className="relative bg-[url(/fondoB.jpg)] bg-cover bg-center text-white px-6 md:px-10 py-10 w-full flex justify-center items-center flex-col gap-3 min-h-[130px] md:min-h-[160px]">
+      <header className="relative bg-[url(/fondoB.jpg)] bg-cover bg-center text-white px-6 md:px-10 py-10 w-full flex justify-center items-center flex-col gap-3 min-h-[130px] md:min-h-[200px]">
         <Link href="/" className="flex flex-col items-center gap-3">
           <img src="/logo_w.png" alt="Logo" className="relative object-contain w-[80%] md:w-auto md:object-cover h-[50px] z-20 mx-auto" />
           <p className="text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-center">
