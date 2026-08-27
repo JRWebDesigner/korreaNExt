@@ -45,7 +45,7 @@ export default function Home() {
       <section className="flex flex-col items-center mb-16 max-w-[1600px] mx-auto">
         <div className="w-full bg-black py-14 md:py-32 px-6 md:px-20">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="italic text-base md:text-5xl leading-relaxed text-gray-200">
+            <p className="italic text-base md:text-4xl leading-relaxed text-gray-200">
               Korrea Studio works across art direction, set design and fabrication
               for film, editorial and brand worlds. We develop spatial environments
               from concept to completion, driven by storytelling, atmosphere and
