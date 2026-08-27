@@ -63,29 +63,24 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="my-16 md:my-[130px]">
-        <motion.div 
-          className="container mx-auto flex flex-wrap  gap-10 justify-center items-center px-10"
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-        >
-          {[1, 2].map((i) => (
-            <motion.div key={i} variants={scaleUp}>
-              <div className="bg-gray-600 border-gray-800 overflow-hidden hover:border-gray-600 transition-colors group rounded-2xl w-[270px] md:w-[350px] h-[270px] md:h-[350px]">
-                <div className="relative overflow-hidden w-full h-full">
-                  <img
-                    src={`/`}
-                    alt={`Project ${i}`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
+      <section className="w-full">
+        <div className="grid grid-cols-12">
+          {/* Franja superior gris claro */}
+          <div className="col-span-12 bg-gray-200 h-24 md:h-32" />
+      
+          {/* Fila 2: naranja / negro / imagen con textura */}
+          <div className="col-span-2 bg-orange-600 h-32 md:h-40" />
+          <div className="col-span-8 bg-black h-32 md:h-40" />
+          <div className="col-span-2 bg-[url(/texture.jpg)] bg-cover bg-center h-32 md:h-40" />
+      
+          {/* Franja negra intermedia */}
+          <div className="col-span-12 bg-black h-28 md:h-36" />
+      
+          {/* Fila 4: gris claro / imagen / naranja */}
+          <div className="col-span-6 bg-gray-200 h-32 md:h-40" />
+          <div className="col-span-4 bg-[url(/building.jpg)] bg-cover bg-center h-32 md:h-40" />
+          <div className="col-span-2 bg-orange-600 h-32 md:h-40" />
+        </div>
       </section>
     </>
   );
