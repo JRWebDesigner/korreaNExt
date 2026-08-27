@@ -38,9 +38,8 @@ export default function Home() {
       <section className="relative grid grid-cols-[0.5fr_2fr_0.5fr] h-[70dvh] md:h-[80dvh] bg-black max-w-[1400px] mx-auto">
         <div className="bg-gray-200 h-full" /> 
         <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoPlay loop playsInline muted>
-        <div className="bg-gray-200 h-full" /> 
-          
         </video>
+         <div className="bg-gray-200 h-full" /> 
       </section>
 
       <section className="flex flex-col items-center mb-16 max-w-[1400px] mx-auto">
