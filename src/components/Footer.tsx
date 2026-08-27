@@ -13,7 +13,9 @@ export default function Footer() {
       <div className="relative z-20 text-sm sm:text-base md:text-lg flex items-center justify-center w-full text-white opacity-70">
         <p className="font-medium">info@korreastudio.co.uk</p>
       </div>
-
+<p className="relative z-20 font-medium opacity-70 text-sm sm:text-base">
+        London, United Kingdom
+      </p>
       <a
         href="https://www.instagram.com/korreastudio?utm_source=qr"
         target="_blank"
@@ -23,9 +25,7 @@ export default function Footer() {
         <FaInstagram size={20} className="sm:size-[22px] md:size-[24px]" />
       </a>
 
-      <p className="relative z-20 font-medium opacity-70 text-sm sm:text-base">
-        London, United Kingdom
-      </p>
+      
 
       <div className="relative z-20 w-full flex flex-wrap justify-center gap-4 sm:gap-5 md:gap-6 mt-6 sm:mt-8 md:mt-10 text-base sm:text-lg md:text-xl">
         <Link href="/work" className="text-white hover:text-orange-400 font-semibold transition-colors duration-200">
