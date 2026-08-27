@@ -37,7 +37,9 @@ const dotBg = {
   backgroundSize: "14px 14px",
 };
 
-function VisualColumn({ variant }) {
+type ServiceVariant = "light-dots" | "gray-orange" | "dark-orange";
+
+function VisualColumn({ variant }: { variant: ServiceVariant }) {
   if (variant === "light-dots") {
     return (
       <div className="relative w-full h-full bg-[#f2f1ee]" style={dotBg}>
