@@ -35,7 +35,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative grid grid-cols-[0.5fr_2fr_0.5fr] h-[70dvh] md:h-[71dvh] bg-black max-w-[1700px] mx-auto">
+      <section className="relative grid grid-cols-[0.5fr_2fr_0.5fr] h-[70dvh] md:h-[71dvh] bg-black max-w-[180px] mx-auto">
         <div className="bg-gray-200 h-full" /> 
         <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoPlay loop playsInline muted>
         </video>
