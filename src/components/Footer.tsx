@@ -28,16 +28,16 @@ export default function Footer() {
       </p>
 
       <div className="relative z-20 w-full flex flex-wrap justify-center gap-4 sm:gap-5 md:gap-6 mt-6 sm:mt-8 md:mt-10 text-base sm:text-lg md:text-xl">
-        <Link href="/work" className="text-white hover:text-orange-400 font-semibold hover:text-white transition-colors duration-200">
+        <Link href="/work" className="text-white hover:text-orange-400 font-semibold transition-colors duration-200">
           WORK
         </Link>
-        <Link href="/studio" className="text-red-600 font-semibold hover:text-white transition-colors duration-200">
+        <Link href="/studio" className="text-red-600 font-semibold transition-colors duration-200">
           STUDIO
         </Link>
-        <Link href="/services" className="text-white hover:text-orange-400 font-semibold hover:text-white transition-colors duration-200">
+        <Link href="/services" className="text-white hover:text-orange-400 font-semibold transition-colors duration-200">
           SERVICES
         </Link>
-        <Link href="/contact" className="text-white hover:text-orange-400 font-semibold hover:text-white transition-colors duration-200">
+        <Link href="/contact" className="text-white hover:text-orange-400 font-semibold transition-colors duration-200">
           CONTACT
         </Link>
       </div>
