@@ -1,11 +1,14 @@
 "use client"
+type ServiceVariant = "light-dots" | "gray-orange" | "dark-orange";
+
 type Service = {
   title: string;
   description: string;
   index: string;
   variant: ServiceVariant;
 };
-const services = [
+
+const services: Service[] = [
   {
     title: "Art Direction & Set Design",
     description:
@@ -41,8 +44,6 @@ const dotBg = {
   backgroundImage: "radial-gradient(circle, #00000022 1px, transparent 1px)",
   backgroundSize: "14px 14px",
 };
-
-type ServiceVariant = "light-dots" | "gray-orange" | "dark-orange";
 
 function VisualColumn({ variant }: { variant: ServiceVariant }) {
   if (variant === "light-dots") {
