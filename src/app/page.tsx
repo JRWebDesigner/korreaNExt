@@ -40,36 +40,26 @@ export default function Home() {
         </video>
       </section>
 
-      <section className="flex flex-col flex-wrap items-center mb-16">
-        {/* Fondo blanco */}
-        <div className="w-full bg-white py-10 md:py-24 px-4 md:px-20">
-          <div className="info container text-center mx-auto">
-            <h1 className="text-2xl md:text-5xl font-bold text-gray-900">
-              Set design / Art direction / Fabrication
-            </h1>
-            <br className="hidden md:block"/>
-            <br className="hidden md:block"/>
-            <p className="text-base md:text-2xl mt-4 text-gray-900">
-              Korrea Studio works across art direction, set design and fabrication for film, editorial and brand worlds. We develop spatial environments from concept to completion, driven by storytelling, atmosphere and contemporary visual language.
+      <section className="flex flex-col items-center mb-16">
+        <div className="w-full bg-[url(/fondoB.jpg)] bg-cover bg-center py-14 md:py-20 px-6 md:px-20">
+          <div className="max-w-3xl">
+            <p className="italic text-base md:text-2xl leading-relaxed text-gray-200">
+              Korrea Studio works across art direction, set design and fabrication
+              for film, editorial and brand worlds. We develop spatial environments
+              from concept to completion, driven by storytelling, atmosphere and
+              contemporary visual language.
             </p>
+      
+            <motion.div variants={scaleUp}>
+              <ul className="flex flex-row flex-wrap gap-6 md:gap-10 text-xl md:text-3xl font-bold uppercase tracking-wide text-white mt-10 md:mt-16">
+                {navLinks.map(({ href, label }) => (
+                  <li key={href} className="hover:text-red-500 transition-colors">
+                    <Link href={href}>{label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
           </div>
-        </div>
-
-        {/* Menú con fondo negro */}
-        <div className="w-full bg-[url(/fondoB.jpg)] bg-contain md:bg-cover bg-repeat py-10 px-4 md:px-20">
-          <motion.div variants={scaleUp}>
-            <div className="overflow-hidden   group h-full rounded-2xl w-full max-w-[500px] lg:max-w-[1100px] mx-auto">
-              <div className="relative h-[95px] md:h-64 lg:h-[320px] overflow-hidden flex flex-col justify-center items-center text-white text-center">
-                <ul className="relative z-20 flex flex-row flex-wrap justify-center gap-4 md:gap-8 text-2xl md:text-4xl lg:text-5xl font-medium tracking-wide">
-                  {navLinks.map(({ href, label }) => (
-                    <li key={href} className="text-red-600 hover:text-white transition-colors">
-                      <Link href={href}>{label}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </motion.div>
         </div>
       </section>
 
