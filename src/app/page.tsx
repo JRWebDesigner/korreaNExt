@@ -64,7 +64,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-     <section className="relative w-full overflow-hidden border  border-y border-white/30 ">
+     <section className="relative w-full overflow-hidden border-y border-white/30 ">
 
       {/* Contenedor centrado con el mosaico */}
       <div className="w-full max-w-[1680px] mx-auto">
