@@ -73,10 +73,10 @@ export default function Home() {
           <div className="col-start-11 col-span-2 h-[28dvh] bg-orange-600" />
       
           {/* Fila 2: negro sólido (cols 1-8) */}
-          <div className="col-span-8 h-[28dvh] bg-black" />
+          <div className="col-span-10 h-[28dvh] bg-[#efece4] border-b-2 border-black" />
       
           {/* Fila 2: gris claro (cols 9-10), línea gris a la izquierda */}
-          <div className="col-span-2 h-[28dvh] bg-gray-300 border-l-2 border-gray-500" />
+          <div className="" />
       
           {/* Gris oscuro: abajo a la derecha (cols 11-12) */}
           <div className="col-start-11 col-span-2 h-[28dvh] bg-gray-800" />
