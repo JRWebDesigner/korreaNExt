@@ -68,16 +68,10 @@ export default function Home() {
         <div className="grid grid-cols-12 grid-rows-2">
           {/* Franja superior sólida (cols 1-10), línea negra abajo */}
           <div className="col-span-10 h-[28dvh] bg-[#efece4] border-b-2 border-black" />
-      
           {/* Naranja: arriba a la derecha (cols 11-12) */}
           <div className="col-start-11 col-span-2 h-[28dvh] bg-orange-600" />
-      
           {/* Fila 2: negro sólido (cols 1-8) */}
           <div className="col-span-10 h-[28dvh] bg-[#efece4] border-b-2 border-black" />
-      
-          {/* Fila 2: gris claro (cols 9-10), línea gris a la izquierda */}
-          <div className="" />
-      
           {/* Gris oscuro: abajo a la derecha (cols 11-12) */}
           <div className="col-start-11 col-span-2 h-[28dvh] bg-gray-800" />
         </div>
