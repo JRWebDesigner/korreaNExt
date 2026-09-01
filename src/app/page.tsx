@@ -35,7 +35,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative grid grid-cols-[0.5fr_2fr_0.5fr] h-[70dvh] md:h-[71dvh] bg-black max-w-[17500px] mx-auto">
+      <section className="relative grid grid-cols-[0.5fr_2fr_0.5fr] h-[70dvh] md:h-[71dvh] bg-black max-w-[1750px] mx-auto">
         <div className="bg-gray-200 h-full" /> 
         <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoPlay loop playsInline muted>
         </video>
@@ -81,7 +81,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative w-full overflow-hidden border-y border-white/30 mt-[70px]">
+      <section className="relative w-full overflow-hidden border-y border-white/30 mt-[270px]">
          <div className="w-full max-w-[1750px] mx-auto">
           <div className="grid grid-cols-12 grid-rows-2 border-2 border-black">
             {/* Franja superior (cols 1-10) */}
