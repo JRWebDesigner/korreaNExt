@@ -35,11 +35,13 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative grid grid-cols-[0.5fr_2fr_0.5fr] h-[70dvh] md:h-[71dvh] bg-black max-w-[1750px] mx-auto border-y border-white/30">
-        <div className="bg-gray-200 h-full" /> 
-        <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoPlay loop playsInline muted>
-        </video>
-         <div className="bg-gray-200 h-full" /> 
+      <section className="relative h-[70dvh] md:h-[71dvh] border-y border-white/30 w-full">
+        <div className="grid grid-cols-[0.5fr_2fr_0.5fr] h-full bg-black max-w-[1750px] mx-auto">
+           <div className="bg-gray-200 h-full" /> 
+          <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoPlay loop playsInline muted>
+          </video>
+           <div className="bg-gray-200 h-full" /> 
+        </div>
       </section>
 
       <section className="flex flex-col justify-center items-center max-w-[1600px] mx-auto">
@@ -65,20 +67,11 @@ export default function Home() {
         </div>
       </section>
       <section className="relative w-full overflow-hidden border-y border-white/30">
-        <div className="w-full max-w-[1750px] mx-auto">
-          <div className="grid grid-cols-12 grid-rows-2 border-2 border-black">
-            {/* Franja superior (cols 1-10) */}
-            <div className="col-span-10 h-[28dvh] bg-[#efece4] border border-black" />
-      
-            {/* Naranja: arriba a la derecha (cols 11-12) */}
-            <div className="col-start-11 col-span-2 h-[28dvh] bg-orange-600 border border-black" />
-      
-            {/* Franja inferior (cols 1-10) */}
-            <div className="col-span-10 h-[28dvh] bg-[#efece4] border border-black" />
-      
-            {/* Gris oscuro: abajo a la derecha (cols 11-12) */}
-            <div className="col-start-11 col-span-2 h-[28dvh] bg-gray-800 border border-black" />
-          </div>
+        <div className="grid grid-cols-12 grid-rows-2 border-2 border-black divide-x divide-y divide-black">
+          <div className="col-span-10 h-[28dvh] bg-[#efece4]" />
+          <div className="col-start-11 col-span-2 h-[28dvh] bg-orange-600" />
+          <div className="col-span-10 h-[28dvh] bg-[#efece4]" />
+          <div className="col-start-11 col-span-2 h-[28dvh] bg-gray-800" />
         </div>
       </section>
       <section className="relative w-full overflow-hidden border-y border-white/30 mt-[270px]">
