@@ -64,18 +64,29 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full max-w-[1800px] mx-auto">
-        <div className="grid grid-cols-12 grid-rows-2">
-          {/* Franja superior sólida (cols 1-10), línea negra abajo */}
-          <div className="col-span-10 h-[28dvh] bg-[#efece4] border-b-2 border-black" />
-          {/* Naranja: arriba a la derecha (cols 11-12) */}
-          <div className="col-start-11 col-span-2 h-[28dvh] bg-orange-600" />
-          {/* Fila 2: negro sólido (cols 1-8) */}
-          <div className="col-span-10 h-[28dvh] bg-[#efece4] border-b-2 border-black" />
-          {/* Gris oscuro: abajo a la derecha (cols 11-12) */}
-          <div className="col-start-11 col-span-2 h-[28dvh] bg-gray-800" />
-        </div>
-      </section>
+     <section className="relative w-full overflow-hidden">
+  <div className="w-full max-w-[1800px] mx-auto relative">
+    <div className="grid grid-cols-12 grid-rows-2 border-2 border-black">
+      {/* Franja superior (cols 1-10) */}
+      <div className="col-span-10 h-[28dvh] bg-[#efece4] border border-black" />
+
+      {/* Naranja: arriba a la derecha (cols 11-12) */}
+      <div className="col-start-11 col-span-2 h-[28dvh] bg-orange-600 border border-black" />
+
+      {/* Franja inferior (cols 1-10) */}
+      <div className="col-span-10 h-[28dvh] bg-[#efece4] border border-black" />
+
+      {/* Gris oscuro: abajo a la derecha (cols 11-12) */}
+      <div className="col-start-11 col-span-2 h-[28dvh] bg-gray-800 border border-black" />
+    </div>
+
+    {/* Línea gris: esquina superior derecha hacia el borde de la pantalla */}
+    <div className="absolute top-0 right-0 h-px bg-gray-400 w-[50vw]" />
+
+    {/* Línea gris: esquina inferior derecha hacia el borde de la pantalla */}
+    <div className="absolute bottom-0 right-0 h-px bg-gray-400 w-[50vw]" />
+  </div>
+</section>
       <section className="w-full max-w-[1800px] mx-auto">
         <div className="grid grid-cols-12">
           <div className="col-span-12 bg-black h-28 md:h-36" />
