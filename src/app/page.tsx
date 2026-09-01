@@ -66,15 +66,20 @@ export default function Home() {
       </section>
       <section className="w-full max-w-[1800px] mx-auto">
         <div className="grid grid-cols-12 grid-rows-2">
-          {/* Naranja: ocupa TODO el alto, ambas franjas */}
-          <div className="col-span-2 row-span-2 bg-orange-600 h-[56dvh]" />
+          {/* Franja superior sólida (cols 1-10), línea negra abajo */}
+          <div className="col-span-10 h-[28dvh] bg-[#efece4] border-b-2 border-black" />
       
-          {/* Franja superior con textura (cols 3-12) */}
-          <div className="col-span-10 h-[28dvh] bg-[#efece4] bg-[url('/texture-paper.jpg')] bg-cover bg-center" />
+          {/* Naranja: arriba a la derecha (cols 11-12) */}
+          <div className="col-start-11 col-span-2 h-[28dvh] bg-orange-600" />
       
-          {/* Fila 2: negro + textura (cols 3-12) */}
-          <div className="col-span-8 h-[28dvh] bg-[#dedad2]" />
-          <div className="col-span-2 h-[28dvh] bg-[#dedad2] bg-[url('/texture-paper.jpg')] bg-cover bg-center" />
+          {/* Fila 2: negro sólido (cols 1-8) */}
+          <div className="col-span-8 h-[28dvh] bg-black" />
+      
+          {/* Fila 2: gris claro (cols 9-10), línea gris a la izquierda */}
+          <div className="col-span-2 h-[28dvh] bg-gray-300 border-l-2 border-gray-500" />
+      
+          {/* Gris oscuro: abajo a la derecha (cols 11-12) */}
+          <div className="col-start-11 col-span-2 h-[28dvh] bg-gray-800" />
         </div>
       </section>
       <section className="w-full max-w-[1800px] mx-auto">
