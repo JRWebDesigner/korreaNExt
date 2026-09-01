@@ -68,17 +68,15 @@ export default function Home() {
       </section>
       <section className="relative w-full overflow-hidden border-y border-white/30">
         <div className="w-full max-w-[1750px] mx-auto">
-          <div className="grid grid-cols-12 grid-rows-2 border-2 border-black">
+          <div className="grid grid-cols-12 grid-rows-2">
             {/* Franja superior (cols 1-10) */}
-            <div className="col-span-10 h-[28dvh] bg-[
-#efece4] border-b border-r border-black" />
+            <div className="col-span-10 h-[28dvh] bg-[#efece4] border-b border-r border-black" />
 
             {/* Naranja: arriba a la derecha (cols 11-12) */}
             <div className="col-start-11 col-span-2 h-[28dvh] bg-orange-600 border-b border-black" />
 
             {/* Franja inferior (cols 1-10) */}
-            <div className="col-span-10 h-[28dvh] bg-[
-#efece4]" />
+            <div className="col-span-10 h-[28dvh] bg-[#efece4]" />
 
             {/* Gris oscuro: abajo a la derecha (cols 11-12) */}
             <div className="col-start-11 col-span-2 h-[28dvh] bg-gray-800" />
