@@ -64,30 +64,30 @@ export default function Home() {
           </div>
         </div>
       </section>
-    <section className="relative w-full overflow-hidden">
-      {/* Contenedor centrado con el mosaico */}
-      <div className="w-full max-w-[1800px] mx-auto">
-        <div className="grid grid-cols-12 grid-rows-2 border-2 border-black">
-          {/* Franja superior (cols 1-10) */}
-          <div className="col-span-10 h-[28dvh] bg-[#efece4] border border-black" />
-    
-          {/* Naranja: arriba a la derecha (cols 11-12) */}
-          <div className="col-start-11 col-span-2 h-[28dvh] bg-orange-600 border border-black" />
-    
-          {/* Franja inferior (cols 1-10) */}
-          <div className="col-span-10 h-[28dvh] bg-[#efece4] border border-black" />
-    
-          {/* Gris oscuro: abajo a la derecha (cols 11-12) */}
-          <div className="col-start-11 col-span-2 h-[28dvh] bg-gray-800 border border-black" />
+      <section className="relative w-full overflow-hidden">
+        {/* Línea superior: mitad derecha */}
+        <div className="absolute top-0 right-0 w-1/2 border-t border-gray-200" />
+      
+        {/* Línea inferior: mitad derecha */}
+        <div className="absolute bottom-0 right-0 w-1/2 border-t border-gray-200" />
+      
+        {/* Contenedor centrado con el mosaico */}
+        <div className="w-full max-w-[1800px] mx-auto">
+          <div className="grid grid-cols-12 grid-rows-2 border-2 border-black">
+            {/* Franja superior (cols 1-10) */}
+            <div className="col-span-10 h-[28dvh] bg-[#efece4] border border-black" />
+      
+            {/* Naranja: arriba a la derecha (cols 11-12) */}
+            <div className="col-start-11 col-span-2 h-[28dvh] bg-orange-600 border border-black" />
+      
+            {/* Franja inferior (cols 1-10) */}
+            <div className="col-span-10 h-[28dvh] bg-[#efece4] border border-black" />
+      
+            {/* Gris oscuro: abajo a la derecha (cols 11-12) */}
+            <div className="col-start-11 col-span-2 h-[28dvh] bg-gray-800 border border-black" />
+          </div>
         </div>
-      </div>
-    
-      {/* Línea gris: desde el borde derecho del mosaico hacia el borde de la pantalla (arriba) */}
-      <div className="absolute top-0 h-px bg-gray-400 left-[calc(50%+900px)] right-0" />
-    
-      {/* Línea gris: desde el borde derecho del mosaico hacia el borde de la pantalla (abajo) */}
-      <div className="absolute bottom-0 h-px bg-gray-400 left-[calc(50%+900px)] right-0" />
-    </section>
+      </section>
       <section className="w-full max-w-[1800px] mx-auto">
         <div className="grid grid-cols-12">
           <div className="col-span-12 bg-black h-28 md:h-36" />
