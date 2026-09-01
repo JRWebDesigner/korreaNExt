@@ -66,10 +66,10 @@ export default function Home() {
       </section>
       <section className="relative w-full overflow-hidden">
         {/* Línea superior: mitad derecha */}
-        <div className="absolute top-0 right-0 w-1/2 border-t border-gray-200" />
+        <div className="absolute top-0 right-0 w-1/2 border-b border-gray-100" />
       
         {/* Línea inferior: mitad derecha */}
-        <div className="absolute bottom-0 right-0 w-1/2 border-t border-gray-200" />
+        <div className="absolute bottom-0 right-0 w-1/2 border-t border-gray-100" />
       
         {/* Contenedor centrado con el mosaico */}
         <div className="w-full max-w-[1800px] mx-auto">
