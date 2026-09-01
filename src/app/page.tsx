@@ -73,13 +73,13 @@ export default function Home() {
             <div className="col-span-10 h-[28dvh] bg-[#efece4] border-b border-r border-black" />
 
             {/* Naranja: arriba a la derecha (cols 11-12) */}
-            <div className="col-start-11 col-span-2 h-[28dvh] bg-orange-600 border-b border-black" />
+            <div className="col-start-11 col-span-2 h-[28dvh] bg-orange-600 border-l border-b border-black" />
 
             {/* Franja inferior (cols 1-10) */}
-            <div className="col-span-10 h-[28dvh] bg-[#efece4]" />
+            <div className="col-span-10 h-[28dvh] bg-[#efece4] border-t border-r border-black" />
 
             {/* Gris oscuro: abajo a la derecha (cols 11-12) */}
-            <div className="col-start-11 col-span-2 h-[28dvh] bg-gray-800" />
+            <div className="col-start-11 col-span-2 h-[28dvh] bg-gray-800 border-r border-t border-black" />
           </div>
         </div>
       </section>
@@ -90,13 +90,13 @@ export default function Home() {
             <div className="col-span-10 h-[28dvh] bg-[#efece4] border-b border-r border-black" />
 
             {/* Naranja: arriba a la derecha (cols 11-12) */}
-            <div className="col-start-11 col-span-2 h-[28dvh] bg-orange-600 border-b border-black" />
+            <div className="col-start-11 col-span-2 h-[28dvh] bg-orange-600 border-l border-b border-black" />
 
             {/* Franja inferior (cols 1-10) */}
-            <div className="col-span-10 h-[28dvh] bg-[#efece4]" />
+            <div className="col-span-10 h-[28dvh] bg-[#efece4] border-t border-r border-black" />
 
             {/* Gris oscuro: abajo a la derecha (cols 11-12) */}
-            <div className="col-start-11 col-span-2 h-[28dvh] bg-gray-800" />
+            <div className="col-start-11 col-span-2 h-[28dvh] bg-gray-800 border-r border-t border-black" />
           </div>
         </div>
       </section>
