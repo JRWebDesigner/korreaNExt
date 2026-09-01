@@ -35,7 +35,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative grid grid-cols-[0.5fr_2fr_0.5fr] h-[70dvh] md:h-[71dvh] bg-black max-w-[1800px] mx-auto">
+      <section className="relative grid grid-cols-[0.5fr_2fr_0.5fr] h-[70dvh] md:h-[71dvh] bg-black max-w-[1680px] mx-auto">
         <div className="bg-gray-200 h-full" /> 
         <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoPlay loop playsInline muted>
         </video>
@@ -66,13 +66,13 @@ export default function Home() {
       </section>
       <section className="relative w-full overflow-hidden">
         {/* Línea superior: mitad derecha */}
-         <div className="absolute top-0 h-px border-t border-white/10 left-[calc(50%+900px)] right-0" />
+         <div className="absolute top-0 border-t border-white/10 left-[calc(50%+900px)] right-0" />
 
         {/* Línea: desde el borde derecho del mosaico hacia el borde de la pantalla (abajo) */}
-        <div className="absolute bottom-0 h-px border-t border-white/10 left-[calc(50%+900px)] right-0" />
+        <div className="absolute bottom-0 border-t border-white/10 left-[calc(50%+900px)] right-0" />
             
         {/* Contenedor centrado con el mosaico */}
-        <div className="w-full max-w-[1800px] mx-auto">
+        <div className="w-full max-w-[1680px] mx-auto">
           <div className="grid grid-cols-12 grid-rows-2 border-2 border-black">
             {/* Franja superior (cols 1-10) */}
             <div className="col-span-10 h-[28dvh] bg-[#efece4] border border-black" />
@@ -88,7 +88,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full max-w-[1800px] mx-auto">
+      <section className="w-full max-w-[1680px] mx-auto">
         <div className="grid grid-cols-12">
           <div className="col-span-12 bg-black h-28 md:h-36" />
       
