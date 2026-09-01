@@ -35,7 +35,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative grid grid-cols-[0.5fr_2fr_0.5fr] h-[70dvh] md:h-[71dvh] bg-black max-w-[1680px] mx-auto">
+      <section className="relative grid grid-cols-[0.5fr_2fr_0.5fr] h-[70dvh] md:h-[71dvh] bg-black max-w-[17500px] mx-auto">
         <div className="bg-gray-200 h-full" /> 
         <video src="ejemplo.mp4" className="relative z-0 w-full h-full object-cover" autoPlay loop playsInline muted>
         </video>
@@ -64,33 +64,38 @@ export default function Home() {
           </div>
         </div>
       </section>
-     <section className="relative w-full overflow-hidden border-y border-white/30 ">
-
-      {/* Contenedor centrado con el mosaico */}
-      <div className="w-full max-w-[1680px] mx-auto">
-        <div className="grid grid-cols-12 grid-rows-2 border-2 border-black">
-          {/* Franja superior (cols 1-10) */}
-          <div className="col-span-10 h-[28dvh] bg-[#efece4] border border-black" />
-    
-          {/* Naranja: arriba a la derecha (cols 11-12) */}
-          <div className="col-start-11 col-span-2 h-[28dvh] bg-orange-600 border border-black" />
-    
-          {/* Franja inferior (cols 1-10) */}
-          <div className="col-span-10 h-[28dvh] bg-[#efece4] border border-black" />
-    
-          {/* Gris oscuro: abajo a la derecha (cols 11-12) */}
-          <div className="col-start-11 col-span-2 h-[28dvh] bg-gray-800 border border-black" />
-        </div>
-      </div>
-    </section>
-      <section className="w-full max-w-[1680px] mx-auto">
-        <div className="grid grid-cols-12">
-          <div className="col-span-12 bg-black h-28 md:h-36" />
+      <section className="relative w-full overflow-hidden border-y border-white/30">
+        <div className="w-full max-w-[1750px] mx-auto">
+          <div className="grid grid-cols-12 grid-rows-2 border-2 border-black">
+            {/* Franja superior (cols 1-10) */}
+            <div className="col-span-10 h-[28dvh] bg-[#efece4] border border-black" />
       
-          {/* Fila 4: gris claro / imagen / naranja */}
-          <div className="col-span-6 bg-white h-[35dvh] md:h-[28dvh]" />
-          <div className="col-span-6 bg-gray-200 bg-cover bg-center h-[35dvh] md:h-[28dvh]" />
-          <div className="col-span-2 bg-orange-600 h-[35dvh] md:h-[28dvh]" />
+            {/* Naranja: arriba a la derecha (cols 11-12) */}
+            <div className="col-start-11 col-span-2 h-[28dvh] bg-orange-600 border border-black" />
+      
+            {/* Franja inferior (cols 1-10) */}
+            <div className="col-span-10 h-[28dvh] bg-[#efece4] border border-black" />
+      
+            {/* Gris oscuro: abajo a la derecha (cols 11-12) */}
+            <div className="col-start-11 col-span-2 h-[28dvh] bg-gray-800 border border-black" />
+          </div>
+        </div>
+      </section>
+      <section className="relative w-full overflow-hidden border-y border-white/30 mt-[70px]">
+         <div className="w-full max-w-[1750px] mx-auto">
+          <div className="grid grid-cols-12 grid-rows-2 border-2 border-black">
+            {/* Franja superior (cols 1-10) */}
+            <div className="col-span-10 h-[28dvh] bg-[#efece4] border border-black" />
+      
+            {/* Naranja: arriba a la derecha (cols 11-12) */}
+            <div className="col-start-11 col-span-2 h-[28dvh] bg-orange-600 border border-black" />
+      
+            {/* Franja inferior (cols 1-10) */}
+            <div className="col-span-10 h-[28dvh] bg-[#efece4] border border-black" />
+      
+            {/* Gris oscuro: abajo a la derecha (cols 11-12) */}
+            <div className="col-start-11 col-span-2 h-[28dvh] bg-gray-800 border border-black" />
+          </div>
         </div>
       </section>
     </>
