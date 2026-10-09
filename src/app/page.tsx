@@ -117,6 +117,7 @@ const scaleUp = {
     },
   },
 };
+
 export default function Home() {
   const [selectedProject, setSelectedProject] =
     useState<(typeof projects)[number] | null>(null);
@@ -148,6 +149,7 @@ export default function Home() {
     { href: "/services", label: "Services" },
     { href: "/contact", label: "Contact" },
   ];
+
   return (
     <>
       <section className="relative h-[70dvh] md:h-[90dvh] bg-black">
