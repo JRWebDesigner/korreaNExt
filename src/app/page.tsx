@@ -186,7 +186,7 @@ export default function Home() {
             <div className="overflow-hidden hover:border-gray-600 transition-colors group h-full rounded-2xl w-[500px] lg:w-[1100px] mx-auto">
               <div className="relative h-[320px] overflow-hidden flex flex-col justify-center items-center text-white text-center">
                 <div className="absolute inset-0" />
-                <ul className="relative z-20 flex flex-row gap-8 text-3xl md:text-5xl font-medium tracking-wide">
+                <ul className="relative z-20 flex flex-row flex-wrap gap-8 text-3xl md:text-5xl font-medium tracking-wide">
                   {navLinks.map(({ href, label }) => (
                     <li
                       key={href}
