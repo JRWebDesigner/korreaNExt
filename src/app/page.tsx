@@ -41,7 +41,7 @@ const projects = [
     position: "left-[5%] top-0 w-[40%] h-[26%] sm:left-[64%] sm:w-[20%] sm:h-[34%]",
     drift: 18,
     duration: 22,
-    delay: 11,
+    delay: 8,
   },
   {
     title: "Event Experiences",
@@ -53,7 +53,7 @@ const projects = [
     position: "right-[5%] top-0 w-[40%] h-[25%] sm:left-[38%] sm:w-[19%] sm:h-[29%]",
     drift: -18,
     duration: 22,
-    delay: 16.5,
+    delay: 11.5,
   },
   {
     title: "London Events",
@@ -74,7 +74,7 @@ const projects = [
       "An event project for GUAP Gala, bringing together art direction and a distinctive atmosphere.",
     image: "/index/guap-gala.webp",
     imageAlt: "GUAP Gala project",
-    position: "left-[5%] top-0 w-[39%] h-[24%] sm:left-[36%] sm:w-[20%] sm:h-[31%]",
+    position: "right-[5%] top-0 w-[39%] h-[24%] sm:left-[36%] sm:w-[20%] sm:h-[31%]",
     drift: -14,
     duration: 22,
     delay: 5.5,
@@ -86,10 +86,10 @@ const projects = [
       "A campaign-led project exploring visual storytelling for a global sporting moment.",
     image: "/index/soluciones-mundial.webp",
     imageAlt: "World Cup campaign visual",
-    position: "right-[7%] top-0 w-[40%] h-[26%] sm:left-[64%] sm:w-[20%] sm:h-[34%]",
+    position: "left-[5%] top-0 w-[40%] h-[26%] sm:left-[64%] sm:w-[20%] sm:h-[34%]",
     drift: 18,
     duration: 22,
-    delay: 11,
+    delay: 8,
   },
   {
     title: "Event Experiences",
@@ -101,7 +101,7 @@ const projects = [
     position: "right-[5%] top-0 w-[40%] h-[25%] sm:left-[38%] sm:w-[19%] sm:h-[29%]",
     drift: -18,
     duration: 22,
-    delay: 16.5,
+    delay: 11.5,
   },
 ];
 
@@ -112,7 +112,7 @@ const scaleUp = {
     opacity: 1,
     transition: {
       duration: 0.5,
-      ease: "easeOut",
+      ease: "easeOut" as const,
       delay: 0.2,
     },
   },
